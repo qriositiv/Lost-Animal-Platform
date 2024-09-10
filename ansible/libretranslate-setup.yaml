@@ -1,0 +1,92 @@
+---
+- hosts: translators
+  vars_files: [vault.yml]
+  vars:
+    ansible_become_pass: "{{ lookup('vars', 'translators_' + inventory_hostname + '_pass') }}"  # imported from vault
+    translator_public_ip: "{{ lookup('vars', 'translators_' + inventory_hostname + '_public_ip') }}"
+    USER: "{{ lookup('env','USER') }}"
+  tasks:
+    - name: Installing packages
+      apt:
+        pkg:
+          - git
+          - python3
+          - python3-virtualenv
+          - python-is-python3
+          - python3-pip
+          - python3-dev
+          - build-essential
+          - libssl-dev
+          - libffi-dev
+          - python3-setuptools
+          - nginx
+          - python3-icu
+          - pkg-config
+        state: present
+        update-cache: true
+      become: true
+    - name: clone Libetranslate
+      git:
+        repo: https://github.com/libretranslate/libretranslate.git
+        dest: '{{ ansible_env.HOME }}/LibreTranslate'
+        single_branch: true
+    - name: Create virtualenv for LibreTranslate
+      command: virtualenv /home/{{ USER }}/LibreTranslate/env
+      args:
+        creates: /home/{{ USER }}/LibreTranslate/env/bin/activate
+    - name: Install gunicorn in the virtualenv
+      pip:
+        name: gunicorn
+        virtualenv: /home/{{ USER }}/LibreTranslate/env
+    - name: Install LibreTranslate in the virtualenv
+      pip:
+        name: /home/{{ USER }}/LibreTranslate/
+        virtualenv: /home/{{ USER }}/LibreTranslate/env
+        extra_args: --no-cache-dir
+    - name: Install argospm in the virtualenv
+      pip:
+        name: argostranslate
+        virtualenv: /home/{{ USER }}/LibreTranslate/env
+    - name: Update argospm repositories
+      command: /home/{{ USER }}/LibreTranslate/env/bin/argospm update
+    - name: Install English-Lithuanian language pack
+      command: /home/{{ USER }}/LibreTranslate/env/bin/argospm install translate-en_lt
+    - name: Copy nginx config
+      template:
+        src: '{{ playbook_dir }}/apache/nginx.conf.j2'
+        dest: /etc/nginx/sites-available/default
+      become: true
+    - name: Restart Nginx
+      service:
+        name: nginx
+        enabled: true
+        state: started
+      become: true
+    - name: Create systemd service file for libretranslate application
+      copy:
+        dest: /etc/systemd/system/libretranslate.service
+        content: |
+          [Unit]
+          Description=libetranslate WSGI with Gunicorn and Nginx
+          After=network.target
+          [Service]
+          User={{ USER }}
+          Group=www-data
+          WorkingDirectory=/home/{{ USER }}/LibreTranslate
+          Environment="PATH=/home/{{ USER }}/LibreTranslate/env/bin"
+          ExecStart=/home/{{ USER }}/LibreTranslate/env/bin/gunicorn --workers 3 --bind unix:libretranslate.sock -m 007 wsgi:app
+          Restart=always
+          ExecReload=/bin/kill -s HUP $MAINPID
+          KillMode=mixed
+          TimeoutStopSec=1
+          [Install]
+          WantedBy=multi-user.target
+      become: true
+    - name: Start and enable libretranslate service
+      ansible.builtin.systemd:
+        name: libretranslate
+        enabled: true
+        state: started
+      become: true
+    - debug:
+        msg: Setup complete

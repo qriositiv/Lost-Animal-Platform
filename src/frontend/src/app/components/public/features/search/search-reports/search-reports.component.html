@@ -1,0 +1,10 @@
+<div class="flex p-2 w-full md:w-10/12 mx-auto">
+    <div class="hidden sm:block lg:w-80 p-2">
+        <div class="p-4 border border-solid border-zinc-500 rounded-xl max-md:hidden">
+            <app-filter (filteredReports)="receiveFilteredReports($event)"></app-filter>
+        </div>
+    </div>
+    <div class="w-full md:p-2 pt-2">
+        <app-content [allReports]="filteredReports"></app-content>
+    </div>
+</div>

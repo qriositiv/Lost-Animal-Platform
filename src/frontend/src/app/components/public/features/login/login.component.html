@@ -1,0 +1,53 @@
+<div class="max-w-md mx-auto p-4 shadow-lg rounded-lg">
+
+  <form
+    [formGroup]="loginForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="mb-2">
+      <label for="login" class="block text-sm font-medium text-zinc-700" i18n="@@username">Username</label>
+      <input
+        formControlName="login"
+        id="login"
+        type="login"
+        [placeholder]=placeholderusername
+        class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm placeholder-zinc-400 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm"
+      />
+    </div>
+    @if (login?.invalid && login?.touched) {
+        <div class="text-red-500 text-sm mt-1 mb-4" i18n="@@usernameisrequired">Username is required</div>
+    }
+    <div class="mb-2 relative">
+      <label for="password" class="block text-sm font-medium text-zinc-700" i18n="@@password">Password</label>
+      <input
+        id="password"
+        formControlName="password"
+        [type]="passwordHidden ? 'password' : 'text'"
+        [placeholder]=placeholderpassword
+        class="mt-1 block w-full pl-3 pr-15 py-2 border border-zinc-300 rounded-md shadow-sm placeholder-zinc-400 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm"
+      />
+      <button type="button" (click)="togglePasswordVisibility()"
+              class="absolute inset-y-3.5 right-0 pr-3 flex items-center justify-between min-h-full text-sm leading-4"
+              style="width: 2.5rem;">
+        <i class="fas" [class]="passwordHidden ? 'fa-eye-slash' : 'fa-eye'"></i>
+      </button>
+    </div>
+
+    @if (password?.invalid && password?.touched) {
+        <div class="text-red-500 text-sm mt-1  mb-4" i18n="@@passwordisrequired">Password is required</div>
+      }
+
+    <button type="submit"
+            [disabled]="!loginForm.valid"
+            class="mt-2 w-full bg-emerald-600 focus:ring-4 focus:outline-none focus:ring-emerald-300 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-emerald-500 dark:focus:ring-emerald-800 disabled:bg-emerald-300 disabled:cursor-not-allowed disabled:text-white disabled:hover:bg-emerald-300 disabled:focus:ring-0"
+            i18n="@@signin">
+      Sign in
+    </button>
+      <p class="mt-4 text-sm text-center"><ng-container i18n="@@donthaveanaccount?">
+        Don't have an account? </ng-container><a routerLink="/register" class="text-emerald-400 hover:text-emerald-500 font-medium" i18n="@@registerhere">Register
+        here</a>
+      </p>
+      </form>
+
+
+      </div>

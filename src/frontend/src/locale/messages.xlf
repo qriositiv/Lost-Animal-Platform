@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="COPYRIGHT" datatype="html">
+        <source> © 2024 Copyright: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/&quot; class=&quot;hover:text-emerald-400&quot;&gt;"/>StraySafe<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">79,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HOME.TITLE" datatype="html">
+        <source>We&apos;re here to help you find your pet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/home-page/home-page.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HOME.DESCRIPTION" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>StraySafe<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> is a free platform specialised in helping to find missing pets and their owners.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/home-page/home-page.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ILostAPet" datatype="html">
+        <source> I Lost a pet </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/home-page/home-page.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ISawAPet" datatype="html">
+        <source> I Saw a pet </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/home-page/home-page.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="close" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dogs" datatype="html">
+        <source> Dogs </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cats" datatype="html">
+        <source> Cats </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="other" datatype="html">
+        <source> Other </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lost" datatype="html">
+        <source> Lost </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">125,126</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-box/report-box.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seen" datatype="html">
+        <source> Seen </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="found" datatype="html">
+        <source> Found </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-box/report-box.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="shelters" datatype="html">
+        <source> Shelters </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">155,156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="entersearchregion" datatype="html">
+        <source>Enter search region</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="search" datatype="html">
+        <source>Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header-navigation/header-navigation.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SEARCH.DESCRIPTION" datatype="html">
+        <source>Begin your search through existing reports.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="list" datatype="html">
+        <source>List</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SEARCH.LIST.DESCRIPTION" datatype="html">
+        <source>View reports in a convenient list format.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="map" datatype="html">
+        <source>Map</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SEARCH.MAP.DESCRIPTION" datatype="html">
+        <source>Visualize report locations on an interactive map.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="findbyimage" datatype="html">
+        <source>Find by image</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SEARCH.FINDBYIMAGE.DESCRIPTION" datatype="html">
+        <source>Use image comparison and recognition algorithms to search for similar reports.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PLATFORMRESULTS.TITLE" datatype="html">
+        <source>Platform Results</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PLATFORMRESULTS.DESCRIPTION" datatype="html">
+        <source>Explore statistics demonstrating the effectiveness of this platform in helping to locate lost and found pets.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registeredusers" datatype="html">
+        <source>Registered users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registeredshelters" datatype="html">
+        <source>Registered shelters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="alltypesofreports" datatype="html">
+        <source>All types of reports</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="succesfullyfoundpets" datatype="html">
+        <source>Successfully found pets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="foundpettipns" datatype="html">
+        <source>Found Pet Tips</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Assess the Situation<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: First, make sure the pet is safe and not in immediate danger. Approach cautiously, especially if the pet seems scared or aggressive.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Check for Identification<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Look for any tags, collars, or other forms of identification on the pet. This could provide valuable information on how to contact the owner.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Scan for Microchip<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: If possible, take the pet to a local veterinary clinic or animal shelter to have them scanned for a microchip. Many pets have microchips implanted under their skin, which can help identify their owners.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Take Photos and Note Details<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Document the pet&apos;s appearance, including any distinctive markings or features. Take clear photos to share on social media and with local animal shelters or community groups.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.5" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Notify Authorities<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Contact your local animal control, shelters, and veterinary clinics to report the found pet. They may have information on missing pets in the area or be able to assist in reuniting the pet with its owner.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.6" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Create a report on this website<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Use our platform&apos;s resources to swiftly create a comprehensive seen pet report. Provide all relevant details about your pet, including breed, color, distinctive markings, and any special considerations.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.7" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Use Social Media<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Share information about the found pet on social media platforms like Facebook or Instagram. Include photos, location where the pet was found, and contact information for reaching you or local authorities.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.8" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Reach Out to Local Pet Groups<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Contact local pet rescue groups or community pages dedicated to lost and found pets. They may have resources and networks to help spread the word and reunite the pet with its owner.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.9" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Provide Temporary Care<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: If you&apos;re able to, provide temporary care for the pet while efforts are made to find its owner. Ensure the pet has food, water, and a safe place to stay until they can be reunited.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.10" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Stay Persistent and Patient<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Reuniting a lost pet with its owner can take time and effort. Stay persistent in your search efforts and remain patient. Your actions could make a significant difference in bringing a beloved pet back home.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="backtogeneralpage" datatype="html">
+        <source> Back to General Page </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lostpetsearchtips" datatype="html">
+        <source>Lost Pet Search Tips</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Act Quickly<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Don&apos;t wait to start your search. The sooner you begin, the higher the chance of finding your pet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Create a lost pet report in this platform<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Use our platform&apos;s resources to swiftly create a comprehensive lost pet report. Provide all relevant details about your pet, including breed, color, distinctive markings, and any special considerations.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Search your lost pet among seen or found reports on this website<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Use our platform&apos;s search function to browse through seen or found reports of pets in your area. You can filter the results by location or species and even view them on a map to see where sightings or discoveries have occurred. This can help you identify potential leads or sightings of your lost pet and aid in your search efforts.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Search the Immediate Area<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Start by searching your home, yard, and any nearby places your pet might hide or roam.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.5" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Notify Neighbors and Local Businesses<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Let your neighbors and nearby businesses know that your pet is missing. They can keep an eye out and may have seen something.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.6" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Use relevant image of your pet<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Ensure that the photo you use accurately depicts your pet&apos;s appearance. Choose a clear, recent image that clearly shows their face and any distinctive features. This will help people better identify your pet if they come across them.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.7" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Use Social Media<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Post a photo and description of your pet on social media platforms. Ask friends and followers to share your post to reach a wider audience.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.8" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Contact Animal Shelters and Veterinary Clinics<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Reach out to local animal shelters and vet clinics to see if your pet has been brought in or reported found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.9" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Create Lost Pet Flyers<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Our platform suggests creating a flyer design based on the information provided in your report. This feature streamlines the process of generating eye-catching flyers that can be quickly printed and distributed in your community.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.10" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Search During Quiet Hours<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Late at night or early in the morning, when there&apos;s less noise and activity, can be the best time to search for a lost pet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.11" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Don&apos;t Give Up<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>: Persistence is key. Keep searching and spreading the word. Many pets are reunited with their owners weeks or even months after going missing.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tipsandrecources" datatype="html">
+        <source>Tips and Resources</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="TIPS.DESCRIPTION" datatype="html">
+        <source>Explore a variety of useful resources suited to your problems or interests.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lostpettips" datatype="html">
+        <source>Lost Pet Tips</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="TIPSLOST.DESCRIPTION" datatype="html">
+        <source>Practical advice and strategies for finding a missing pet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="foundpettips" datatype="html">
+        <source>Found Pet Tips</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="TIPSFOUND.DESCRIPTION" datatype="html">
+        <source>Guidance on caring for a pet you have found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="howtohelp" datatype="html">
+        <source>How to help</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.DESCRIPTION" datatype="html">
+        <source>Ways to assist in reuniting lost pets with their owners.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="waystohelpfindlostpets" datatype="html">
+        <source>Ways to Help Find Lost Pets (Volunteering)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Spread Awareness:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Share posts about missing pets on your social media accounts and encourage others to do the same. The more people who see the posts, the higher the chances of finding the pet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Join Search Parties:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Keep an eye out for announcements about search parties in your area and join them. Every extra pair of eyes can make a difference in finding a lost pet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Distribute Flyers:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Take flyers from local shelters or print your own from the platform and distribute them in your neighborhood, at local businesses, and on community bulletin boards.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Report Sightings:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> If you see a pet that matches the description of a missing one, report it immediately to the platform or local animal control. Time is of the essence in reuniting lost pets with their owners.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.5" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Share Expertise:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> If you have experience with animals or search and rescue operations, consider offering your expertise to help organize search efforts or provide guidance to others.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.6" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Offer Transportation:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Volunteer to help transport flyers, supplies, or found pets to and from locations as needed. Your vehicle can be a valuable asset in search efforts.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.7" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Donate Supplies:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Donate items such as pet food, blankets, or first aid kits to local shelters or organizations involved in the search for missing pets.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.8" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Be Vigilant:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Keep an eye out for lost pet alerts in your area and be vigilant for any signs of a missing pet while you&apos;re out and about.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.9" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Attend Events:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Participate in community events organized by the platform, such as fundraisers or awareness campaigns, to show your support for reuniting lost pets with their families.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.10" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;&gt;"/>Educate Others:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Spread the word about responsible pet ownership and the importance of microchipping and ID tags to prevent pets from getting lost in the future.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportedTIMEAgo" datatype="html">
+        <source>reported 123456 ago</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-box/report-box.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="author" datatype="html">
+        <source>Author</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="posted" datatype="html">
+        <source>Posted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportidentifier" datatype="html">
+        <source>report identifier</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="update" datatype="html">
+        <source> Update </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete" datatype="html">
+        <source> Delete </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastseenlocation" datatype="html">
+        <source>Last seen location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">51,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="petname" datatype="html">
+        <source>Pet name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="animal" datatype="html">
+        <source>Animal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="breed" datatype="html">
+        <source>Breed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="size" datatype="html">
+        <source>Size</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gender" datatype="html">
+        <source>Gender</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="age" datatype="html">
+        <source>Age</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notes" datatype="html">
+        <source>Notes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phonenumber" datatype="html">
+        <source>Phone number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reporttags" datatype="html">
+        <source>Report tags</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">104,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="active" datatype="html">
+        <source>ACTIVE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nonActive" datatype="html">
+        <source>NON-ACTIVE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportType" datatype="html">
+        <source>Report Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchdistance" datatype="html">
+        <source>Search distance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1km" datatype="html">
+        <source>1km</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5km" datatype="html">
+        <source>5km</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="25km" datatype="html">
+        <source>25km</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="125km" datatype="html">
+        <source>125km</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="all" datatype="html">
+        <source>all</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="publishedinthelast" datatype="html">
+        <source>Published in the last</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30min" datatype="html">
+        <source>30min</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2h" datatype="html">
+        <source>2h</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6h" datatype="html">
+        <source>6h</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="24h" datatype="html">
+        <source>24h</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d" datatype="html">
+        <source>5d</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="animaltype" datatype="html">
+        <source>Animal type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dog" datatype="html">
+        <source>Dog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cat" datatype="html">
+        <source>Cat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add" datatype="html">
+        <source>Add</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="remove" datatype="html">
+        <source>Remove</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="male" datatype="html">
+        <source>Male</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="female" datatype="html">
+        <source>Female</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createdby" datatype="html">
+        <source>Created by</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="order" datatype="html">
+        <source>Order</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="newestonthetop" datatype="html">
+        <source>Newest on the top</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nearestonthetop" datatype="html">
+        <source>Nearest on the top</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="enterSearchRegionHere" datatype="html">
+        <source>Enter search region here</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resources" datatype="html">
+        <source>Resources</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header-navigation/header-navigation.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="language" datatype="html">
+        <source>Language</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile" datatype="html">
+        <source>Profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settings" datatype="html">
+        <source>Settings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile.yourProfile" datatype="html">
+        <source>Your profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reports" datatype="html">
+        <source>Reports</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="signout" datatype="html">
+        <source>Sign Out</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="username" datatype="html">
+        <source>Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="usernameisrequired" datatype="html">
+        <source>Username is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordisrequired" datatype="html">
+        <source>Password is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">37,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="signin" datatype="html">
+        <source> Sign in </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="donthaveanaccount?" datatype="html">
+        <source> Don&apos;t have an account? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerhere" datatype="html">
+        <source>Register here</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">47,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="placeholderusername" datatype="html">
+        <source>Username*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="placeholderpassword" datatype="html">
+        <source>Password*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PAGENOTFOUND.TITLE" datatype="html">
+        <source>Page not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-404/page-404.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PAGENOTFOUND.DESCRIPTION" datatype="html">
+        <source>The page you are looking for cannot be found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-404/page-404.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="backtothemainpage" datatype="html">
+        <source> Back to the main page </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-404/page-404.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register" datatype="html">
+        <source>Register</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3702338872876040900" datatype="html">
+        <source>Username is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1464344135267287388" datatype="html">
+        <source>Username has to be more than 6 characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8187644016663825943" datatype="html">
+        <source>Username cannot be more than 20 characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordisreqi=uired" datatype="html">
+        <source>Password is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2365956373647162772" datatype="html">
+        <source>Password must contain:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4827360877273979412" datatype="html">
+        <source>At least one uppercase letter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6521929470217720615" datatype="html">
+        <source>At least one lowercase letter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8671549879247666797" datatype="html">
+        <source>At least one digit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="915901661033691540" datatype="html">
+        <source>Cannot contain empty spaces</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2820370551041533050" datatype="html">
+        <source>Must be longer than 8 chararcters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4768749765465246664" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+        <note priority="1" from="description">email</note>
+      </trans-unit>
+      <trans-unit id="8552587679160911578" datatype="html">
+        <source>Email is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+        <note priority="1" from="description">emailisrequired</note>
+      </trans-unit>
+      <trans-unit id="5448447574828483730" datatype="html">
+        <source>Email is invalid</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">76,80</context>
+        </context-group>
+        <note priority="1" from="description">emailisinvalid</note>
+      </trans-unit>
+      <trans-unit id="6028371114637047813" datatype="html">
+        <source>First Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+        <note priority="1" from="description">firstname</note>
+      </trans-unit>
+      <trans-unit id="1211429020758039180" datatype="html">
+        <source>First Name is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7851718277515628303" datatype="html">
+        <source>First Name cannot be more than 40 characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4489784631322736309" datatype="html">
+        <source>First Name cannot contain numbers or special characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4407559560004943843" datatype="html">
+        <source>Last Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+        <note priority="1" from="description">lastname</note>
+      </trans-unit>
+      <trans-unit id="1456505106291669106" datatype="html">
+        <source>Last Name is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2797083372698670162" datatype="html">
+        <source>Last Name cannot be more than 50 characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6521230203964921815" datatype="html">
+        <source>Last Name cannot contain numbers or special characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8194554728555410336" datatype="html">
+        <source>Phone Number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">124,126</context>
+        </context-group>
+        <note priority="1" from="description">phonenumber</note>
+      </trans-unit>
+      <trans-unit id="4941543669684168127" datatype="html">
+        <source>Phone number is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3477487017303706075" datatype="html">
+        <source>Phone number has to start with + and contain only numbers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">138,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7203320122205058413" datatype="html">
+        <source> Sign up </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">146,147</context>
+        </context-group>
+        <note priority="1" from="description">signup</note>
+      </trans-unit>
+      <trans-unit id="specifythelocation" datatype="html">
+        <source>Specify the location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indicatetheplacewhereyoulasttimesawthepet" datatype="html">
+        <source> Indicate the place where you last saw the pet. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nextstep" datatype="html">
+        <source>Next Step 🡆</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uploadaphotoofthepet" datatype="html">
+        <source>Upload a photo of the pet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="choosethebestqualityphotopossiblethatclearlyshows..." datatype="html">
+        <source> Choose the best quality photo possible that clearly shows pet&apos;s face. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">6,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="clicktoupload" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-semibold&quot;&gt;"/>Click to upload<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> or drag and drop </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pngorjpg" datatype="html">
+        <source>PNG or JPG</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uploadanotherphoto" datatype="html">
+        <source> Upload a different photo </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="finish" datatype="html">
+        <source> Crop </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="REPORTSUBMITED" datatype="html">
+        <source>Report submited</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-created/report-created.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="startsearching" datatype="html">
+        <source> Start Searching </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-created/report-created.component.html</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="viewmyreport" datatype="html">
+        <source> View My Report </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-created/report-created.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3747290407723718350" datatype="html">
+        <source>Do not have your pet in this lists?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7853119741644101797" datatype="html">
+        <source>First time seeing this pet?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registeranewpet" datatype="html">
+        <source> Register a new pet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5835859238757453951" datatype="html">
+        <source>Additional notes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+        <note priority="1" from="description">additionalnotes</note>
+      </trans-unit>
+      <trans-unit id="4236925052123595800" datatype="html">
+        <source>characters remaining</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7691673737518912551" datatype="html">
+        <source>I agree to share my contact information located in my profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">44,47</context>
+        </context-group>
+        <note priority="1" from="description">contactsagreement</note>
+      </trans-unit>
+      <trans-unit id="1597118474518438483" datatype="html">
+        <source>I agree with the </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+        <note priority="1" from="description">iagreewiththe</note>
+      </trans-unit>
+      <trans-unit id="privacypolicy" datatype="html">
+        <source>privacy policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="submit" datatype="html">
+        <source> Submit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1139322401632270189" datatype="html">
+        <source> Go back </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/new-pet.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <note priority="1" from="description">goback</note>
+      </trans-unit>
+      <trans-unit id="858202297823588789" datatype="html">
+        <source>Pet Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+        <note priority="1" from="description">petinformation</note>
+      </trans-unit>
+      <trans-unit id="giveasmuchinformationofthepetaspossible" datatype="html">
+        <source> Give as much information of the pet as possible.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indicatesrequiredoprion" datatype="html">
+        <source>* Indicates required option</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ihavetakeninthepet" datatype="html">
+        <source>I have taken in the pet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="type" datatype="html">
+        <source>Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="small" datatype="html">
+        <source>Small</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="medium" datatype="html">
+        <source>Medium</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="big" datatype="html">
+        <source>Big</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="young" datatype="html">
+        <source>Young</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adult" datatype="html">
+        <source>Adult</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="senior" datatype="html">
+        <source>Senior</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4427463243224540085" datatype="html">
+        <source>Breed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+        <note priority="1" from="description">breed</note>
+      </trans-unit>
+      <trans-unit id="report" datatype="html">
+        <source>Report</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelter-page/shelter-page.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments" datatype="html">
+        <source>Comments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelter-page/shelter-page.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="updateprofile" datatype="html">
+        <source> Back </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelter-page/shelter-page.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uploadnewimage" datatype="html">
+        <source>Upload new image</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="save" datatype="html">
+        <source> Save </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8243265617059229816" datatype="html">
+        <source>Breed, Size, Gender, Age</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <note priority="1" from="description">kazkas</note>
+      </trans-unit>
+      <trans-unit id="edit" datatype="html">
+        <source> EDIT </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pets" datatype="html">
+        <source>Your pets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

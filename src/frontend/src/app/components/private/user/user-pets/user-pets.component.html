@@ -1,0 +1,81 @@
+@if (petList$ | async; as petList) { @for (pet of petList; track $index) {
+<div class="flex bg-white md:pb-16 pb-4">
+  <div class="relative max-sm:hidden">
+    <div
+      class="w-36 h-36 bg-emerald-100 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-6 -ml-12 items-center justify-center text-emerald-500"
+    >
+      <img src="{{ pet.petImage }}" class="rounded-full" />
+    </div>
+  </div>
+  <div
+    class="w-full border rounded-lg h-24"
+    [class.border-emerald-400]="$index === petSelected"
+    [class.border-zinc-200]="isSelected === false"
+  >
+    <div class="md:ml-28 mt-3 mx-3">
+      <div class="flex justify-between">
+        <div>
+          <div class="flex">
+            <span class="bg-emerald-300 rounded-full px-3 py-1 mr-2">{{
+              translate.getAnimalTranslation(pet.petType) | uppercase
+            }}</span>
+            <p class="lg:text-xl md:text-base sm:text-sm">{{ pet.petName }}</p>
+          </div>
+          <div class="flex mt-2">
+            <p i18n="kazkas" class="max-md:text-xs">
+              {{ pet.petBreed }}, {{ translate.getSizeTranslation(pet.petSize) }},
+              {{ translate.getGenderTranslation(pet.petGender) }}, {{ translate.getAgeTranslation(pet.petAge) }}
+            </p>
+          </div>
+        </div>
+
+        @if (isAuthor) {
+        <div class="lg:flex lg:flex-row">
+          
+          <div class="md:mr-4 my-auto text-center max-md:mb-1">
+            <div>
+              <button
+                type="button"
+                (click)="showModal(pet.petId)"
+                class="text-rose-400 w-24 py-1 border-2 rounded-full border-rose-400 hover:bg-rose-400 hover:text-white"
+                i18n="@@remove"
+              >
+                REMOVE
+              </button>
+            </div>
+          </div>
+
+          @if (editable === 2) {
+          <div class="md:mr-4 my-auto text-center space-y-2">
+            <div>
+              @if (petSelected !== $index) {
+              <button
+                (click)="onButtonClick($index, true, pet.petId)"
+                class="text-emerald-400 w-24 py-1 border-2 font rounded-full border-emerald-400 hover:bg-emerald-500 hover:text-white"
+              >
+                SELECT
+              </button>
+              } @else if (petSelected === $index) {
+              <button
+                (click)="onButtonClick($index, false, pet.petId)"
+                class="text-white w-24 py-1 border-2 font rounded-full bg-emerald-400 hover:bg-emerald-500"
+              >
+                <fa-icon [icon]="faCheck"></fa-icon>
+              </button>
+              }
+            </div>
+          </div>
+          } 
+        </div>
+      }
+      </div>
+    </div>
+  </div>
+</div>
+} } @if(isModalVisible){
+<app-confirmation-popup
+  [petId]="selectedPetId"
+  (closeModal)="closeModal()"
+  (confirmDeletion)="deletePet($event)"
+></app-confirmation-popup>
+}

@@ -1,0 +1,6 @@
+A) AI model to find animal
+B) crop background (leave blurred for viewers)
+Libretranslate for automatic comment translation
+Look into material design guides
+Looked over ER preliminary
+Milestones

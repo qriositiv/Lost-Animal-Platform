@@ -1,0 +1,45 @@
+<div class="h-auto py-12 md:flex space-x-10 items-center justify-between w-5/6 max-lg:w-11/12 mx-auto">
+    <div class="flex flex-col md:space-y-4 md:text-left max-sm:text-center md:mb-10 mb-4">
+        <h1 class="font-bold md:text-6xl text-3xl" i18n="@@PLATFORMRESULTS.TITLE">Platform Results</h1>
+        <p class="md:text-xl text-gray-700 md:w-3/4" i18n="@@PLATFORMRESULTS.DESCRIPTION">Explore statistics demonstrating the effectiveness of this platform in helping to locate lost and found pets.</p>
+    </div>
+    <div class="md:w-1/2 w-5/6 flex flex-wrap">
+        <div class="flex space-x-4 mx-auto bg-emerald-300 px-3 py-5 rounded-xl items-center md:w-1/2 w-5/6 h-24 mb-4 md:mr-4">
+            <div>
+                <fa-icon [icon]="faUser" class="text-5xl"></fa-icon>
+            </div>
+            <div>
+                <p class="font-extrabold text-3xl">{{ userCount }}</p>
+                <p class="text-zinc-800" i18n="@@registeredusers">Registered users</p>
+            </div>
+        </div>
+        <div class="flex space-x-4 mx-auto bg-emerald-300 px-3 py-5 rounded-xl items-center md:w-1/2 w-5/6 h-24 mb-4 md:mr-4">
+            <div>
+                <fa-icon [icon]="faShieldDog" class="text-5xl"></fa-icon>
+            </div>
+            <div>
+                <p class="font-extrabold text-3xl">{{ shelterCount }}</p>
+                <p class="text-zinc-800" i18n="@@registeredshelters">Registered shelters</p>
+            </div>
+        </div>
+        <div class="flex space-x-4 mx-auto bg-emerald-300 px-3 py-5 rounded-xl items-center md:w-1/2 w-5/6 h-24 mb-4 md:mr-4">
+            <div>
+                <fa-icon [icon]="faBullhorn" class="text-5xl"></fa-icon>
+            </div>
+            <div>
+                <p class="font-extrabold text-3xl">{{ reportCount }}</p>
+                <p class="text-zinc-800" i18n="@@alltypesofreports">All types of reports</p>
+            </div>
+        </div>
+        <div class="flex space-x-4 mx-auto bg-emerald-300 px-3 py-5 rounded-xl items-center md:w-1/2 w-5/6 h-24 mb-4 md:mr-4">
+            <div>
+                <fa-icon [icon]="faCircleCheck" class="text-5xl"></fa-icon>
+            </div>
+            <div>
+                <p class="font-extrabold text-3xl">{{ successPercent }}%</p>
+                <p class="text-zinc-800" i18n="@@succesfullyfoundpets">Successfully found pets</p>
+            </div>
+        </div>
+    </div>
+    
+</div>

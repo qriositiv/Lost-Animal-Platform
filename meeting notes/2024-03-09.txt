@@ -1,0 +1,4 @@
+1. Discussed Arsenij MR (Merge Request)
+2. Navbar and lost pet report pages upcoming
+3. Design file template
+4. Databases should be immutable. Use a lot of generics, optionals

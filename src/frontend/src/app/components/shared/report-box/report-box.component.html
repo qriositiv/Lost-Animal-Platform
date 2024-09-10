@@ -1,0 +1,43 @@
+@if (report != null) {
+<div class="">
+  <div class="overflow-hidden p-2">
+    <div class="w-full h-0" style="padding-bottom: 100%; position: relative">
+      <img [src]="report.pet.petImage" class="absolute inset-0 w-full h-full object-cover rounded" />
+    </div>
+  </div>
+  <div class="text-center">
+    <p class="text-sm text-gray-500" i18n="@@reportedTIMEAgo"> Published on {{ report.createdAt | formatDateArray |
+      shortDate }}</p>
+    <div class="flex items-center justify-center">
+      <p class="text-sm rounded px-2 py-1" [class.bg-rose-300]="report.reportType === Type.Lost"
+        [class.bg-lime-300]="report.reportType === Type.Seen" [class.bg-indigo-300]="report.reportType === Type.Found">
+        {{ translate.getTypeTranslation(report.reportType) | uppercase }}
+      </p>
+      <h2 class="text-lg font-bold ml-1">{{ report.pet.petName }}</h2>
+    </div>
+    <p class="text-sm">{{ report.address }}</p>
+  </div>
+</div>
+}
+@if (repSim != null) {
+<div class="">
+  <div class="overflow-hidden p-2">
+    <div class="w-full h-0" style="padding-bottom: 100%; position: relative">
+      <img [src]="repSim.report.pet.petImage" class="absolute inset-0 w-full h-full object-cover rounded" />
+    </div>
+  </div>
+  <div class="text-center">
+    <p class="text-sm text-gray-500" i18n="@@reportedTIMEAgo">{{ repSim.report.createdAt | formatDateArray | shortDate
+      }}</p>
+    <div class="flex items-center justify-center">
+      <p class="text-sm rounded px-2 py-1" [class.bg-rose-300]="repSim.report.reportType === Type.Lost"
+        [class.bg-lime-300]="repSim.report.reportType === Type.Seen"
+        [class.bg-indigo-300]="repSim.report.reportType === Type.Found">
+        {{ translate.getTypeTranslation(repSim.report.reportType) | uppercase }}
+      </p>
+      <h2 class="text-lg font-bold ml-1">{{ repSim.similarity }}</h2>
+    </div>
+    <p class="text-sm">{{ repSim.report.address }}</p>
+  </div>
+</div>
+}

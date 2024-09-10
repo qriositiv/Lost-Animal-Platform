@@ -1,0 +1,3 @@
+1. After 15 days remind user that their lost animal listing will be deleted after 15 days. Ask if to extended period or you have found
+2. Listing should not include animal founds if the time range is too far.
+3. Functional requirements should be more specific.

@@ -1,0 +1,11 @@
+Spring boot has many dependencies.
+ER have been added a lot of tables for pet entity, notification
+Confusion on how ER should be.
+Maps will show the number in area and when you click that number, it zooms and splits others into numbers.
+1) multi-language Arsenij
+2) connect database Edvinas
+3) Make basic report pages - Renaldas
+Create a minimal interface, before making design file.
+ 
+Homework:
+Research how to work with images in AI

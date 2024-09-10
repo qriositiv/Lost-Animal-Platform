@@ -1,0 +1,76 @@
+<div [formGroup]="userProfileForm" class="space-y-2">
+  <div
+    class="w-48 h-48 bg-emerald-100 mx-auto rounded-full shadow-2xl inset-x-0 top-0 items-center justify-center text-emerald-500"
+  >
+    <img
+    src="https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg="
+      class="rounded-full"
+    />
+  </div>
+  <div class="flex justify-center">
+    <button class="text-emerald-400">Upload new image</button>
+  </div>
+  <div>
+    <label for="Username" class="block text-gray-700 text-base ml-2 font-semibold">Username</label>
+    <input type="text" id="Username" formControlName="username" class="w-full px-4 py-2 border rounded-md" />
+  </div>
+  @if (username?.invalid && username?.touched) { @if (username?.errors?.['required']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n="">Username is required</div>
+  } @if (username?.errors?.['pattern']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n="">Username can only contain letters, numbers</div>
+  } @if (username?.errors?.['minlength']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n="">Username has to be more than 6 characters</div>
+  } @if (username?.errors?.['maxlength']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n="">Username cannot be more than 20 characters</div>
+  } }
+  <div>
+    <label for="Email" class="block text-gray-700 text-base ml-2 font-semibold">Email</label>
+    <input type="email" id="Email" formControlName="email" class="w-full px-4 py-2 border rounded-md" />
+  </div>
+  @if (email?.invalid && email?.touched) { @if (email?.errors?.['required']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n="emailisrequired">Email is required</div>
+  } @if (email?.errors?.['pattern']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n="emailisinvalid">Email is invalid</div>
+  } }
+  <div>
+    <label for="First_name" class="block text-gray-700 text-base ml-2 font-semibold">First Name</label>
+    <input type="text" id="First_name" formControlName="firstName" class="w-full px-4 py-2 border rounded-md" />
+  </div>
+  @if(firstName?.invalid && firstName?.touched) { @if (firstName?.errors?.['required']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n>First Name is required</div>
+  } @if (firstName?.errors?.['maxlength']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n>First Name cannot be more than 40 characters</div>
+  } @if (firstName?.errors?.['pattern']) {
+  <div class="text-red-500 text-sm mt-1 pb-3 mb-4" i18n>First Name cannot contain numbers or special characters</div>
+  } }
+  <div>
+    <label for="Last_name" class="block text-gray-700 text-base ml-2 font-semibold">Last Name</label>
+    <input type="text" id="Last_name" formControlName="lastName" class="w-full px-4 py-2 border rounded-md" />
+  </div>
+  @if(lastName?.invalid && lastName?.touched) { @if (lastName?.errors?.['required']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n>Last Name is required</div>
+  } @if (lastName?.errors?.['maxlength']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n>Last Name cannot be more than 50 characters</div>
+  } @if (lastName?.errors?.['pattern']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n>Last Name cannot contain numbers or special characters</div>
+  } }
+  <div>
+    <label for="Phone" class="block text-gray-700 text-base ml-2 font-semibold">Phone Number</label>
+    <input type="text" id="Phone" formControlName="telephone" class="w-full px-4 py-2 border rounded-md" />
+  </div>
+  @if(telephone?.invalid && telephone?.touched) { @if (telephone?.errors?.['required']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n>Phone number is required</div>
+  } @if (telephone?.errors?.['pattern']) {
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n>Phone number has to start with + and contain only numbers.</div>
+  <div class="text-red-500 text-sm mt-1 mb-4" i18n>Phone number has to be between 6 and 14 digits.</div>
+  } }
+  <div class="mt-8 flex justify-center">
+    <button
+      type="button"
+      class="text-nowrap text-white bg-emerald-400 hover:bg-emerald-500 focus:outline-none font-bold rounded-full md:px-9 md:py-3 px-7 py-3 text-center me-2 mb-2"
+      (click)="onUpdateProfile()"
+    >
+      Save
+    </button>
+  </div>
+</div>

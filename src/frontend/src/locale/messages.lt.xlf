@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="lt">
+    <body>
+      <trans-unit id="COPYRIGHT" datatype="html">
+        <source> © 2024 Copyright: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/&quot; class=&quot;hover:text-emerald-400&quot;>"/>StraySafe<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/></source>
+        <target state="translated"> © 2024 Copyright: StraySafe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">79,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HOME.TITLE" datatype="html">
+        <source>We're here to help you find your pet</source>
+        <target state="translated">Esame čia, kad padėtume jums rasti savo augintinį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/home-page/home-page.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HOME.DESCRIPTION" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>StraySafe<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> is a free platform specialised in helping to find missing pets and their owners.</source>
+        <target state="translated">StraySafe - tai nemokama platforma, skirta padėti surasti dingusius augintinius ir jų savininkus.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/home-page/home-page.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ILostAPet" datatype="html">
+        <source> I Lost a pet </source>
+        <target state="translated">Aš pasimėčiau augintinį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/home-page/home-page.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ISawAPet" datatype="html">
+        <source> I Saw a pet </source>
+        <target state="translated">Aš mačiau augintinį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/home-page/home-page.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="close" datatype="html">
+        <source>Close</source>
+        <target state="translated">Uždaryti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dogs" datatype="html">
+        <source> Dogs </source>
+        <target state="translated"> Šunys </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cats" datatype="html">
+        <source> Cats </source>
+        <target state="translated"> Katės </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="other" datatype="html">
+        <source> Other </source>
+        <target state="translated"> Kiti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lost" datatype="html">
+        <source> Lost </source>
+        <target state="translated">Pasimetęs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">125,126</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-box/report-box.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seen" datatype="html">
+        <source> Seen </source>
+        <target state="translated">Matytas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="found" datatype="html">
+        <source> Found </source>
+        <target state="translated"> Rastas </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-box/report-box.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="shelters" datatype="html">
+        <source> Shelters </source>
+        <target state="translated">Prieglaudos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.html</context>
+          <context context-type="linenumber">155,156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="entersearchregion" datatype="html">
+        <source>Enter search region</source>
+        <target state="translated">Įveskite paieškos regioną čia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search-map/search-map.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="search" datatype="html">
+        <source>Search</source>
+        <target state="translated">Ieškoti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header-navigation/header-navigation.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SEARCH.DESCRIPTION" datatype="html">
+        <source>Begin your search through existing reports.</source>
+        <target state="translated">Pradėkite paiešką nuo esamų pranešimų.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="list" datatype="html">
+        <source>List</source>
+        <target state="translated">Sąrašas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SEARCH.LIST.DESCRIPTION" datatype="html">
+        <source>View reports in a convenient list format.</source>
+        <target state="translated">Peržiūrėkite pranešimus patogiu sąrašo formatu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="map" datatype="html">
+        <source>Map</source>
+        <target state="translated">Žemėlapis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SEARCH.MAP.DESCRIPTION" datatype="html">
+        <source>Visualize report locations on an interactive map.</source>
+        <target state="translated">Pranešimų vietas vizualizuokite interaktyviame žemėlapyje.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="findbyimage" datatype="html">
+        <source>Find by image</source>
+        <target state="translated">Rasti pagal paveikslėlį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SEARCH.FINDBYIMAGE.DESCRIPTION" datatype="html">
+        <source>Use image comparison and recognition algorithms to search for similar reports.</source>
+        <target state="translated">Naudokite vaizdų palyginimo ir atpažinimo algoritmus panašių ataskaitų paieškai.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/search/search.component.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PLATFORMRESULTS.TITLE" datatype="html">
+        <source>Platform Results</source>
+        <target state="translated">Platformos rezultatai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PLATFORMRESULTS.DESCRIPTION" datatype="html">
+        <source>Explore statistics demonstrating the effectiveness of this platform in helping to locate lost and found pets.</source>
+        <target state="translated">Išnagrinėkite statistinius duomenis, rodančius šios platformos veiksmingumą padedant rasti pamestus ir rastus augintinius.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registeredusers" datatype="html">
+        <source>Registered users</source>
+        <target state="translated">Registruoti naudotojai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registeredshelters" datatype="html">
+        <source>Registered shelters</source>
+        <target state="translated">Registruotos prieglaudos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="alltypesofreports" datatype="html">
+        <source>All types of reports</source>
+        <target state="translated">Visų tipų pranešimų</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="succesfullyfoundpets" datatype="html">
+        <source>Successfully found pets</source>
+        <target state="translated">Sėkmingai rasti augintiniai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/statistic/statistic.component.html</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="foundpettipns" datatype="html">
+        <source>Found Pet Tips</source>
+        <target state="translated">Rasti naminių gyvūnėlių patarimai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Assess the Situation<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: First, make sure the pet is safe and not in immediate danger. Approach cautiously, especially if the pet seems scared or aggressive.</source>
+        <target state="translated">Įvertinkite situaciją: Pirmiausia įsitikinkite, kad augintinis yra saugus ir jam negresia tiesioginis pavojus. Atsargiai prieikite prie gyvūno, ypač jei jis atrodo išsigandęs ar agresyvus.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Check for Identification<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Look for any tags, collars, or other forms of identification on the pet. This could provide valuable information on how to contact the owner.</source>
+        <target state="translated">Patikrinkite tapatybę: Atkreipkite dėmesį, ar ant augintinio nėra jokių žymių, antkaklių ar kitų identifikavimo ženklų. Tai gali suteikti vertingos informacijos, kaip susisiekti su savininku.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Scan for Microchip<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: If possible, take the pet to a local veterinary clinic or animal shelter to have them scanned for a microchip. Many pets have microchips implanted under their skin, which can help identify their owners.</source>
+        <target state="translated">Mikroschemos nuskaitymas: Jei įmanoma, nuvežkite augintinį į vietinę veterinarijos kliniką arba gyvūnų prieglaudą, kad būtų nuskaityta mikroschema. Daugeliui augintinių po oda implantuojamos mikroschemos, kurios gali padėti identifikuoti jų šeimininkus.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Take Photos and Note Details<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Document the pet's appearance, including any distinctive markings or features. Take clear photos to share on social media and with local animal shelters or community groups.</source>
+        <target state="translated">Fotografuokite ir pasižymėkite detales: Užfiksuokite augintinio išvaizdą, įskaitant bet kokias išskirtines žymes ar bruožus. Padarykite aiškių nuotraukų, kuriomis galėsite dalytis socialinėje žiniasklaidoje ir su vietos gyvūnų prieglaudomis ar bendruomenės grupėmis.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.5" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Notify Authorities<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Contact your local animal control, shelters, and veterinary clinics to report the found pet. They may have information on missing pets in the area or be able to assist in reuniting the pet with its owner.</source>
+        <target state="translated">Praneškite valdžios institucijoms: Kreipkitės į vietos gyvūnų kontrolės tarnybą, prieglaudas ir veterinarijos klinikas ir praneškite apie rastą gyvūną. Jos gali turėti informacijos apie rajone dingusius gyvūnus augintinius arba gali padėti surasti gyvūną augintinį ir jo savininką.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.6" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Create a report on this website<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Use our platform's resources to swiftly create a comprehensive seen pet report. Provide all relevant details about your pet, including breed, color, distinctive markings, and any special considerations.</source>
+        <target state="translated">Sukurkite ataskaitą apie šią svetainę: Naudokitės mūsų platformos ištekliais ir greitai sukurkite išsamią matytų gyvūnų augintinių ataskaitą. Pateikite visą svarbią informaciją apie savo augintinį, įskaitant veislę, spalvą, išskirtines žymes ir bet kokias ypatingas aplinkybes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.7" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Use Social Media<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Share information about the found pet on social media platforms like Facebook or Instagram. Include photos, location where the pet was found, and contact information for reaching you or local authorities.</source>
+        <target state="translated">Panaudokite socialinę žiniasklaidą: dalinkitės informacija apie rastą augintinį socialinės žiniasklaidos platformose, pavyzdžiui, „Facebook“ ar „Instagram“. Įtraukite nuotraukas, vietą, kurioje rastas augintinis, ir kontaktinę informaciją, kad galėtumėte susisiekti su jumis arba vietos valdžios institucijomis.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.8" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Reach Out to Local Pet Groups<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Contact local pet rescue groups or community pages dedicated to lost and found pets. They may have resources and networks to help spread the word and reunite the pet with its owner.</source>
+        <target state="translated">Susisiekite su vietinėmis gyvūnų augintinių grupėmis: Kreipkitės į vietos gyvūnų augintinių gelbėjimo grupes arba bendruomenės puslapius, skirtus pamestiems ir rastiems gyvūnams augintiniams. Jos gali turėti išteklių ir tinklų, kurie padėtų paskleisti informaciją ir vėl suvesti augintinį su jo savininku.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.9" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Provide Temporary Care<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: If you're able to, provide temporary care for the pet while efforts are made to find its owner. Ensure the pet has food, water, and a safe place to stay until they can be reunited.</source>
+        <target state="translated">Suteikite laikiną priežiūrą: Jei galite, suteikite laikiną priežiūrą augintiniui, kol bus ieškoma jo savininko. Pasirūpinkite, kad gyvūnas turėtų maisto, vandens ir saugią vietą, kurioje galėtų būti, kol bus galima su juo susijungti.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FOUNDTIPS.10" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Stay Persistent and Patient<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Reuniting a lost pet with its owner can take time and effort. Stay persistent in your search efforts and remain patient. Your actions could make a significant difference in bringing a beloved pet back home.</source>
+        <target state="translated">Išlikite atkaklūs ir kantrūs: Pasiklydusio augintinio suradimas su šeimininku gali užtrukti ir pareikalauti pastangų. Atkakliai ieškokite ir išlikite kantrūs. Jūsų veiksmai gali būti labai svarbūs sugrąžinant mylimą augintinį namo.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="backtogeneralpage" datatype="html">
+        <source> Back to General Page </source>
+        <target state="translated"> Atgal į pagrindinį puslapį </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-found/tips-found.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lostpetsearchtips" datatype="html">
+        <source>Lost Pet Search Tips</source>
+        <target state="translated">Pasimetusių augintinių paieškos patarimai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Act Quickly<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Don't wait to start your search. The sooner you begin, the higher the chance of finding your pet.</source>
+        <target state="translated">Skubiai veikite: Neatidėliokite paieškos pradžios. Kuo greičiau pradėsite, tuo didesnė tikimybė rasti savo augintinį.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Create a lost pet report in this platform<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Use our platform's resources to swiftly create a comprehensive lost pet report. Provide all relevant details about your pet, including breed, color, distinctive markings, and any special considerations.</source>
+        <target state="translated">Šioje platformoje sukurkite pranešimą apie pamestą augintinį: Naudokitės mūsų platformos ištekliais ir greitai sukurkite išsamią ataskaitą apie pamestą gyvūną augintinį. Pateikite visą svarbią informaciją apie savo augintinį, įskaitant veislę, spalvą, išskirtines žymes ir bet kokias ypatingas aplinkybes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Search your lost pet among seen or found reports on this website<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Use our platform's search function to browse through seen or found reports of pets in your area. You can filter the results by location or species and even view them on a map to see where sightings or discoveries have occurred. This can help you identify potential leads or sightings of your lost pet and aid in your search efforts.</source>
+        <target state="translated">Ieškokite dingusio augintinio tarp pastebėtų ar rastų pranešimų šioje svetainėje: Naudodamiesi mūsų platformos paieškos funkcija, peržiūrėkite savo apylinkėje pastebėtų ar rastų augintinių pranešimus. Rezultatus galite filtruoti pagal vietovę ar rūšį ir net peržiūrėti juos žemėlapyje, kad pamatytumėte, kur buvo pastebėti ar rasti gyvūnai. Tai gali padėti jums nustatyti galimas dingusio augintinio užuomazgas ar pastebėjimus ir palengvinti paieškos pastangas.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Search the Immediate Area<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Start by searching your home, yard, and any nearby places your pet might hide or roam.</source>
+        <target state="translated">Išsiaiškinkite artimiausią apylinkę: Pradėkite nuo savo namų, kiemo ir visų netoliese esančių vietų, kuriose jūsų augintinis gali slėptis ar klaidžioti.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.5" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Notify Neighbors and Local Businesses<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Let your neighbors and nearby businesses know that your pet is missing. They can keep an eye out and may have seen something.</source>
+        <target state="translated">Praneškite kaimynams ir vietos įmonėms: Praneškite kaimynams ir netoliese esančioms įmonėms, kad dingo jūsų augintinis. Jie gali stebėti ir galbūt ką nors pastebėjo.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.6" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Use relevant image of your pet<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Ensure that the photo you use accurately depicts your pet's appearance. Choose a clear, recent image that clearly shows their face and any distinctive features. This will help people better identify your pet if they come across them.</source>
+        <target state="translated">Naudokite tinkamą savo augintinio atvaizdą: įsitikinkite, kad jūsų naudojama nuotrauka tiksliai atspindi jūsų augintinio išvaizdą. Pasirinkite aiškią, neseniai darytą nuotrauką, kurioje aiškiai matytųsi jo veidas ir visi išskirtiniai bruožai. Tai padės žmonėms geriau atpažinti jūsų augintinį, jei jie su juo susidurs.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.7" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Use Social Media<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Post a photo and description of your pet on social media platforms. Ask friends and followers to share your post to reach a wider audience.</source>
+        <target state="translated">Panaudokite socialinę žiniasklaidą: Paskelbkite savo augintinio nuotrauką ir aprašymą socialinės žiniasklaidos platformose. Paprašykite draugų ir sekėjų pasidalyti jūsų įrašu, kad pasiektumėte platesnę auditoriją.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.8" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Contact Animal Shelters and Veterinary Clinics<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Reach out to local animal shelters and vet clinics to see if your pet has been brought in or reported found.</source>
+        <target state="translated">Susisiekite su gyvūnų prieglaudomis ir veterinarijos klinikomis: Kreipkitės į vietines gyvūnų prieglaudas ir veterinarijos klinikas, kad sužinotumėte, ar jūsų augintinis buvo atvežtas arba pranešta apie jo radimą.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.9" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Create Lost Pet Flyers<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Our platform suggests creating a flyer design based on the information provided in your report. This feature streamlines the process of generating eye-catching flyers that can be quickly printed and distributed in your community.</source>
+        <target state="translated">Sukurkite skrajučių apie pamestus gyvūnus: Mūsų platforma siūlo sukurti skrajutės dizainą pagal jūsų ataskaitoje pateiktą informaciją. Ši funkcija supaprastina akį traukiančių skrajučių, kurias galima greitai atspausdinti ir išplatinti jūsų bendruomenėje, kūrimo procesą.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.10" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Search During Quiet Hours<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Late at night or early in the morning, when there's less noise and activity, can be the best time to search for a lost pet.</source>
+        <target state="translated">Ieškoti ramiomis valandomis: Vėlai vakare arba anksti ryte, kai mažiau triukšmo ir veiklos, gali būti geriausias laikas ieškoti pasiklydusio augintinio.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LOSTTIPS.11" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Don't Give Up<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>: Persistence is key. Keep searching and spreading the word. Many pets are reunited with their owners weeks or even months after going missing.</source>
+        <target state="translated">Nepasiduokite: Svarbiausia - atkaklumas. Toliau ieškokite ir skleiskite informaciją. Daugelis gyvūnų augintinių po kelių savaičių ar net mėnesių nuo dingimo vėl sugrįžta pas savo šeimininkus.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-lost/tips-lost.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tipsandrecources" datatype="html">
+        <source>Tips and Resources</source>
+        <target state="translated">Patarimai ir ištekliai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="TIPS.DESCRIPTION" datatype="html">
+        <source>Explore a variety of useful resources suited to your problems or interests.</source>
+        <target state="translated">Explore a variety of useful resources suited to your problems or interests.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lostpettips" datatype="html">
+        <source>Lost Pet Tips</source>
+        <target state="translated">Pasimetusių augintinių patarimai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="TIPSLOST.DESCRIPTION" datatype="html">
+        <source>Practical advice and strategies for finding a missing pet.</source>
+        <target state="translated">Praktiniai patarimai ir strategijos, kaip rasti dingusį augintinį.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="foundpettips" datatype="html">
+        <source>Found Pet Tips</source>
+        <target state="translated">Rasti naminių gyvūnėlių patarimai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="TIPSFOUND.DESCRIPTION" datatype="html">
+        <source>Guidance on caring for a pet you have found.</source>
+        <target state="translated">Gairės, kaip prižiūrėti rastą augintinį.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="howtohelp" datatype="html">
+        <source>How to help</source>
+        <target state="translated">Kaip padėti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.DESCRIPTION" datatype="html">
+        <source>Ways to assist in reuniting lost pets with their owners.</source>
+        <target state="translated">Būdai, kaip padėti susigrąžinti pamestus augintinius jų šeimininkams.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-page.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="waystohelpfindlostpets" datatype="html">
+        <source>Ways to Help Find Lost Pets (Volunteering)</source>
+        <target state="translated">Būdai, kaip padėti rasti pamestus augintinius (savanorystė)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Spread Awareness:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Share posts about missing pets on your social media accounts and encourage others to do the same. The more people who see the posts, the higher the chances of finding the pet.</source>
+        <target state="translated">Skleiskite informaciją: Dalinkitės pranešimais apie dingusius augintinius savo socialinės žiniasklaidos paskyrose ir skatinkite tai daryti kitus. Kuo daugiau žmonių pamatys įrašus, tuo didesnė tikimybė rasti augintinį.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Join Search Parties:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Keep an eye out for announcements about search parties in your area and join them. Every extra pair of eyes can make a difference in finding a lost pet.</source>
+        <target state="translated">Prisijungti prie paieškos vakarėlių: Sekite skelbimus apie paieškos vakarėlius savo vietovėje ir prisijunkite prie jų. Kiekviena papildoma akių pora gali būti svarbi ieškant pasiklydusio augintinio.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Distribute Flyers:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Take flyers from local shelters or print your own from the platform and distribute them in your neighborhood, at local businesses, and on community bulletin boards.</source>
+        <target state="translated">Lankstinukų platinimas: Paimkite lankstinukų iš vietinių prieglaudų arba atsispausdinkite savų iš platformos ir platinkite juos kaimynystėje, vietinėse įmonėse ir bendruomenės skelbimų lentose.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Report Sightings:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> If you see a pet that matches the description of a missing one, report it immediately to the platform or local animal control. Time is of the essence in reuniting lost pets with their owners.</source>
+        <target state="translated">Praneškite apie pastebėtus gyvūnus: Jei pastebėjote augintinį, kuris atitinka dingusio augintinio aprašymą, nedelsdami praneškite apie tai platformai arba vietos gyvūnų kontrolės tarnybai. Laikas yra labai svarbus, norint surasti dingusius gyvūnus augintinius ir jų šeimininkus.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.5" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Share Expertise:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> If you have experience with animals or search and rescue operations, consider offering your expertise to help organize search efforts or provide guidance to others.</source>
+        <target state="translated">Pasidalykite patirtimi: Jei turite patirties su gyvūnais arba paieškos ir gelbėjimo operacijose, apsvarstykite galimybę pasiūlyti savo žinias ir padėti organizuoti paieškos darbus arba teikti rekomendacijas kitiems.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.6" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Offer Transportation:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Volunteer to help transport flyers, supplies, or found pets to and from locations as needed. Your vehicle can be a valuable asset in search efforts.</source>
+        <target state="translated">Siūlyti transportą: Savanoriškai padėkite gabenti skrajutes, reikmenis ar rastus augintinius į vietas ir iš jų, jei reikia. Jūsų transporto priemonė gali būti vertingas turtas paieškos pastangose.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.7" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Donate Supplies:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Donate items such as pet food, blankets, or first aid kits to local shelters or organizations involved in the search for missing pets.</source>
+        <target state="translated">Dovanokite reikmenų: Vietos prieglaudoms ar organizacijoms, dalyvaujančioms dingusių augintinių paieškose, paaukokite tokių daiktų kaip ėdalas gyvūnams, antklodės ar pirmosios pagalbos rinkiniai.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.8" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Be Vigilant:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Keep an eye out for lost pet alerts in your area and be vigilant for any signs of a missing pet while you're out and about.</source>
+        <target state="translated">Būkite budrūs: stebėkite, ar jūsų vietovėje nėra perspėjimų apie dingusius gyvūnus, ir būkite budrūs, ieškodami bet kokių dingusio augintinio požymių.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.9" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Attend Events:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Participate in community events organized by the platform, such as fundraisers or awareness campaigns, to show your support for reuniting lost pets with their families.</source>
+        <target state="translated">Dalyvaukite renginiuose: Dalyvaukite platformos organizuojamuose bendruomenės renginiuose, pavyzdžiui, lėšų rinkimo ar informuotumo didinimo kampanijose, kad parodytumėte savo paramą prarastų augintinių grąžinimui į šeimą.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="VOLUNTEER.10" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold text-lg&quot;>"/>Educate Others:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Spread the word about responsible pet ownership and the importance of microchipping and ID tags to prevent pets from getting lost in the future.</source>
+        <target state="translated">Šviesti kitus: Skleisti informaciją apie atsakingą gyvūnų augintinių laikymą ir mikroschemų bei identifikavimo žymių svarbą, kad augintiniai ateityje nepasiklystų.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/general/tips-page/tips-volunteer/tips-volunteer.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportedTIMEAgo" datatype="html">
+        <source>reported 123456 ago</source>
+        <target state="translated">...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-box/report-box.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="author" datatype="html">
+        <source>Author</source>
+        <target state="translated">Autorius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="posted" datatype="html">
+        <source>Posted</source>
+        <target state="translated">Pranešta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportidentifier" datatype="html">
+        <source>report identifier</source>
+        <target state="translated">pranešimo identifikatorius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="update" datatype="html">
+        <source> Update </source>
+        <target state="translated"> Atnaujinti </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete" datatype="html">
+        <source> Delete </source>
+        <target state="translated">Ištrinti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastseenlocation" datatype="html">
+        <source>Last seen location</source>
+        <target state="translated">Paskutinio matymo vieta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">51,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="petname" datatype="html">
+        <source>Pet name</source>
+        <target state="translated">Augintinio vardas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="animal" datatype="html">
+        <source>Animal</source>
+        <target state="translated">Gyvuno tipas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="breed" datatype="html">
+        <source>Breed</source>
+        <target state="translated">Veislė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="size" datatype="html">
+        <source>Size</source>
+        <target state="translated">Dydis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gender" datatype="html">
+        <source>Gender</source>
+        <target state="translated">Lytis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="age" datatype="html">
+        <source>Age</source>
+        <target state="translated">Amžius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notes" datatype="html">
+        <source>Notes</source>
+        <target state="translated">Pastabos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phonenumber" datatype="html">
+        <source>Phone number</source>
+        <target state="translated">Telefono numeris</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reporttags" datatype="html">
+        <source>Report tags</source>
+        <target state="translated">Pranešimo žymos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.html</context>
+          <context context-type="linenumber">104,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="active" datatype="html">
+        <source>ACTIVE</source>
+        <target state="translated">AKTYVUS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nonActive" datatype="html">
+        <source>NON-ACTIVE</source>
+        <target state="translated">NEAKTYVUS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/content/report-popup/report-popup.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportType" datatype="html">
+        <source>Report Type</source>
+        <target state="translated">Pranešimo tipas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchdistance" datatype="html">
+        <source>Search distance</source>
+        <target state="translated">Paieškos atstumas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1km" datatype="html">
+        <source>1km</source>
+        <target state="translated">1 km</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5km" datatype="html">
+        <source>5km</source>
+        <target state="translated">5 km</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="25km" datatype="html">
+        <source>25km</source>
+        <target state="translated">25 km</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="125km" datatype="html">
+        <source>125km</source>
+        <target state="translated">125 km</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="all" datatype="html">
+        <source>all</source>
+        <target state="translated">visas pasaulis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="publishedinthelast" datatype="html">
+        <source>Published in the last</source>
+        <target state="translated">Paskelbta per pastaruosius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30min" datatype="html">
+        <source>30min</source>
+        <target state="translated">30 min</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2h" datatype="html">
+        <source>2h</source>
+        <target state="translated">2 val</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6h" datatype="html">
+        <source>6h</source>
+        <target state="translated">6 val</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="24h" datatype="html">
+        <source>24h</source>
+        <target state="translated">24 val</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d" datatype="html">
+        <source>5d</source>
+        <target state="translated">5 d.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="animaltype" datatype="html">
+        <source>Animal type</source>
+        <target state="translated">Gyvuno tipas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dog" datatype="html">
+        <source>Dog</source>
+        <target state="translated">Šuo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cat" datatype="html">
+        <source>Cat</source>
+        <target state="translated">Katė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add" datatype="html">
+        <source>Add</source>
+        <target state="translated">Pridėti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="remove" datatype="html">
+        <source>Remove</source>
+        <target state="translated">Pašalinti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="male" datatype="html">
+        <source>Male</source>
+        <target state="translated">Vyras</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="female" datatype="html">
+        <source>Female</source>
+        <target state="translated">Moteris</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createdby" datatype="html">
+        <source>Created by</source>
+        <target state="translated">Sukurtas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/filter/filter.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="order" datatype="html">
+        <source>Order</source>
+        <target state="translated">Rūšiuoti pagal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="newestonthetop" datatype="html">
+        <source>Newest on the top</source>
+        <target state="translated">Naujausias viršuje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nearestonthetop" datatype="html">
+        <source>Nearest on the top</source>
+        <target state="translated">Artimiausias viršuje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="enterSearchRegionHere" datatype="html">
+        <source>Enter search region here</source>
+        <target state="translated">Įveskite paieškos regioną čia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/grid-view/grid-view.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resources" datatype="html">
+        <source>Resources</source>
+        <target state="translated">Patarimai ir ištekliai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header-navigation/header-navigation.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="language" datatype="html">
+        <source>Language</source>
+        <target state="translated">Kalba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile" datatype="html">
+        <source>Profile</source>
+        <target state="translated">Paskyra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settings" datatype="html">
+        <source>Settings</source>
+        <target state="translated">Nustatymai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/mobile-menu/mobile-menu.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login" datatype="html">
+        <source>Login</source>
+        <target state="translated">Prisijungti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile.yourProfile" datatype="html">
+        <source>Your profile</source>
+        <target state="translated">Jūsų paskyra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reports" datatype="html">
+        <source>Reports</source>
+        <target state="translated">Pranešimai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="signout" datatype="html">
+        <source>Sign Out</source>
+        <target state="translated">Atsijungti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/profile-dropdown/profile-dropdown.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="username" datatype="html">
+        <source>Username</source>
+        <target state="translated">Vartotojo vardas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="usernameisrequired" datatype="html">
+        <source>Username is required</source>
+        <target state="translated">Būtina nurodyti vartotojo vardą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password" datatype="html">
+        <source>Password</source>
+        <target state="translated">Slaptažodis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordisrequired" datatype="html">
+        <source>Password is required</source>
+        <target state="translated">Reikalingas slaptažodis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">37,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="signin" datatype="html">
+        <source> Sign in </source>
+        <target state="translated">Prisijungti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="donthaveanaccount?" datatype="html">
+        <source> Don't have an account? </source>
+        <target state="translated">Neturite paskyros?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerhere" datatype="html">
+        <source>Register here</source>
+        <target state="translated"> Užsiregistruokite čia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">47,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="placeholderusername" datatype="html">
+        <source>Username*</source>
+        <target state="translated">Vartotojo vardas*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="placeholderpassword" datatype="html">
+        <source>Password*</source>
+        <target state="translated">Slaptažodis*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PAGENOTFOUND.TITLE" datatype="html">
+        <source>Page not found</source>
+        <target state="translated">Puslapis nerastas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-404/page-404.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PAGENOTFOUND.DESCRIPTION" datatype="html">
+        <source>The page you are looking for cannot be found</source>
+        <target state="translated">Ieškomo puslapio nepavyksta rasti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-404/page-404.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="backtothemainpage" datatype="html">
+        <source> Back to the main page </source>
+        <target state="translated"> Grįžti į pagrindinį puslapį </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-404/page-404.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register" datatype="html">
+        <source>Register</source>
+        <target state="translated">Registracija</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3702338872876040900" datatype="html">
+        <source>Username is required</source>
+        <target state="translated">Reikalingas vartotojo vardas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1464344135267287388" datatype="html">
+        <source>Username has to be more than 6 characters</source>
+        <target state="translated">Vartotojo vardas turi būti ilgesnis nei 6 simboliai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8187644016663825943" datatype="html">
+        <source>Username cannot be more than 20 characters</source>
+        <target state="translated">Vartotojo vardas negali būti ilgesnis nei 20 simbolių</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordisreqi=uired" datatype="html">
+        <source>Password is required</source>
+        <target state="translated">Reikalingas slaptažodis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2365956373647162772" datatype="html">
+        <source>Password must contain:</source>
+        <target state="translated">Slaptažodį turi sudaryti:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4827360877273979412" datatype="html">
+        <source>At least one uppercase letter</source>
+        <target state="translated">Bent viena didžioji raidė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6521929470217720615" datatype="html">
+        <source>At least one lowercase letter</source>
+        <target state="translated">Bent viena mažoji raidė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8671549879247666797" datatype="html">
+        <source>At least one digit</source>
+        <target state="translated">Bent vienas skaitmuo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="915901661033691540" datatype="html">
+        <source>Cannot contain empty spaces</source>
+        <target state="translated">Negali būti tuščių tarpų</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2820370551041533050" datatype="html">
+        <source>Must be longer than 8 chararcters.</source>
+        <target state="translated">Turi būti ilgesnis nei 8 ženklai.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4768749765465246664" datatype="html">
+        <source>Email</source>
+        <target state="translated">El. paštas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+        <note priority="1" from="description">email</note>
+      </trans-unit>
+      <trans-unit id="8552587679160911578" datatype="html">
+        <source>Email is required</source>
+        <target state="translated">Būtinas el. paštas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+        <note priority="1" from="description">emailisrequired</note>
+      </trans-unit>
+      <trans-unit id="5448447574828483730" datatype="html">
+        <source>Email is invalid</source>
+        <target state="translated">El. paštas yra neteisingas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">76,80</context>
+        </context-group>
+        <note priority="1" from="description">emailisinvalid</note>
+      </trans-unit>
+      <trans-unit id="6028371114637047813" datatype="html">
+        <source>First Name</source>
+        <target state="translated">Vardas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+        <note priority="1" from="description">firstname</note>
+      </trans-unit>
+      <trans-unit id="1211429020758039180" datatype="html">
+        <source>First Name is required</source>
+        <target state="translated">Būtina nurodyti vardą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7851718277515628303" datatype="html">
+        <source>First Name cannot be more than 40 characters</source>
+        <target state="translated">Vardas negali būti ilgesnis nei 40 simbolių</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4489784631322736309" datatype="html">
+        <source>First Name cannot contain numbers or special characters</source>
+        <target state="translated">Vardas negali turėti skaičių ar specialiųjų simbolių</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4407559560004943843" datatype="html">
+        <source>Last Name</source>
+        <target state="translated">Pavardė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+        <note priority="1" from="description">lastname</note>
+      </trans-unit>
+      <trans-unit id="1456505106291669106" datatype="html">
+        <source>Last Name is required</source>
+        <target state="translated">Būtina nurodyti pavardę</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2797083372698670162" datatype="html">
+        <source>Last Name cannot be more than 50 characters</source>
+        <target state="translated">Pavardė negali būti ilgesnė nei 50 simbolių</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6521230203964921815" datatype="html">
+        <source>Last Name cannot contain numbers or special characters</source>
+        <target state="translated">Pavardėje negali būti skaičių ar specialiųjų simbolių</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8194554728555410336" datatype="html">
+        <source>Phone Number</source>
+        <target state="translated">Telefono numeris</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">124,126</context>
+        </context-group>
+        <note priority="1" from="description">phonenumber</note>
+      </trans-unit>
+      <trans-unit id="4941543669684168127" datatype="html">
+        <source>Phone number is required</source>
+        <target state="translated">Būtina nurodyti telefono numerį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3477487017303706075" datatype="html">
+        <source>Phone number has to start with + and contain only numbers.</source>
+        <target state="translated">Telefono numeris turi prasidėti raide „+“ ir jame turi būti tik skaičiai.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">138,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7203320122205058413" datatype="html">
+        <source> Sign up </source>
+        <target state="translated">Užsiregistruoti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">146,147</context>
+        </context-group>
+        <note priority="1" from="description">signup</note>
+      </trans-unit>
+      <trans-unit id="specifythelocation" datatype="html">
+        <source>Specify the location</source>
+        <target state="translated">Nurodykite vietą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indicatetheplacewhereyoulasttimesawthepet" datatype="html">
+        <source> Indicate the place where you last saw the pet. </source>
+        <target state="translated">Nurodykite vietą, kurioje paskutinį kartą matėte augintinį.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nextstep" datatype="html">
+        <source>Next Step 🡆</source>
+        <target state="translated">Kitas žingsnis 🡆</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/address-input/address-input.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uploadaphotoofthepet" datatype="html">
+        <source>Upload a photo of the pet</source>
+        <target state="translated">Įkelkite augintinio nuotrauką</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="choosethebestqualityphotopossiblethatclearlyshows..." datatype="html">
+        <source> Choose the best quality photo possible that clearly shows pet's face. </source>
+        <target state="translated">Pasirinkite geriausios įmanomos kokybės nuotrauką, kurioje aiškiai matytųsi augintinio veidas.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">6,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="clicktoupload" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-semibold&quot;>"/>Click to upload<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> or drag and drop </source>
+        <target state="translated">Paspauskite norėdami įkelti arba vilkite ir nuleiskite </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pngorjpg" datatype="html">
+        <source>PNG or JPG</source>
+        <target state="translated">PNG arba JPG</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uploadanotherphoto" datatype="html">
+        <source> Upload a different photo </source>
+        <target state="translated">Įkelti kitą nuotrauką </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="finish" datatype="html">
+        <source> Crop </source>
+        <target state="translated"> Apkarpyti </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="REPORTSUBMITED" datatype="html">
+        <source>Report submited</source>
+        <target state="translated">Pateikti pranešimeą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-created/report-created.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="startsearching" datatype="html">
+        <source> Start Searching </source>
+        <target state="translated"> Pradėti paiešką </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-created/report-created.component.html</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="viewmyreport" datatype="html">
+        <source> View My Report </source>
+        <target state="translated"> Peržiūrėti mano pranešimą </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-created/report-created.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3747290407723718350" datatype="html">
+        <source>Do not have your pet in this lists?</source>
+        <target state="translated">Šiame sąraše nėra jūsų augintinio?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7853119741644101797" datatype="html">
+        <source>First time seeing this pet?</source>
+        <target state="translated">Pirmą kartą matote šį augintinį?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registeranewpet" datatype="html">
+        <source> Register a new pet</source>
+        <target state="translated"> Užregistruoti naują augintinį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5835859238757453951" datatype="html">
+        <source>Additional notes</source>
+        <target state="translated">Additional notes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+        <note priority="1" from="description">additionalnotes</note>
+      </trans-unit>
+      <trans-unit id="4236925052123595800" datatype="html">
+        <source>characters remaining</source>
+        <target state="translated">simbolių liko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7691673737518912551" datatype="html">
+        <source>I agree to share my contact information located in my profile</source>
+        <target state="translated">Sutinku bendrinti savo kontaktinę informaciją, esančią mano profilyje.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">44,47</context>
+        </context-group>
+        <note priority="1" from="description">contactsagreement</note>
+      </trans-unit>
+      <trans-unit id="1597118474518438483" datatype="html">
+        <source>I agree with the </source>
+        <target state="translated">Sutinku su</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+        <note priority="1" from="description">iagreewiththe</note>
+      </trans-unit>
+      <trans-unit id="privacypolicy" datatype="html">
+        <source>privacy policy</source>
+        <target state="translated">Privatumo politika</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="submit" datatype="html">
+        <source> Submit </source>
+        <target state="translated">Pateikti pranešimą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-pet-selection/report-pet-selection.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1139322401632270189" datatype="html">
+        <source> Go back </source>
+        <target state="translated"> Grįžti atgal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/new-pet.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <note priority="1" from="description">goback</note>
+      </trans-unit>
+      <trans-unit id="858202297823588789" datatype="html">
+        <source>Pet Information</source>
+        <target state="translated">Informacija apie gyvūnus augintinius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+        <note priority="1" from="description">petinformation</note>
+      </trans-unit>
+      <trans-unit id="giveasmuchinformationofthepetaspossible" datatype="html">
+        <source> Give as much information of the pet as possible.
+</source>
+        <target state="translated"> Pateikite kuo daugiau informacijos apie augintinį.
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indicatesrequiredoprion" datatype="html">
+        <source>* Indicates required option</source>
+        <target state="translated">* Žymi privalomą parinktį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ihavetakeninthepet" datatype="html">
+        <source>I have taken in the pet</source>
+        <target state="translated">Priėmiau naminį gyvūnėlį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="type" datatype="html">
+        <source>Type</source>
+        <target state="translated">Tipas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="small" datatype="html">
+        <source>Small</source>
+        <target state="translated">Mažas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="medium" datatype="html">
+        <source>Medium</source>
+        <target state="translated">Vidutinis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="big" datatype="html">
+        <source>Big</source>
+        <target state="translated">Didelis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="young" datatype="html">
+        <source>Young</source>
+        <target state="translated">Jaunimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adult" datatype="html">
+        <source>Adult</source>
+        <target state="translated">Suauges</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="senior" datatype="html">
+        <source>Senior</source>
+        <target state="translated">Vyresnysis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4427463243224540085" datatype="html">
+        <source>Breed</source>
+        <target state="translated">Veislė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/report-components/report-summary/reactive-pet-form/reactive-pet-form.component.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+        <note priority="1" from="description">breed</note>
+      </trans-unit>
+      <trans-unit id="report" datatype="html">
+        <source>Report</source>
+        <target state="translated">Pranešimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelter-page/shelter-page.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments" datatype="html">
+        <source>Comments</source>
+        <target state="translated">Komentarai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelter-page/shelter-page.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="updateprofile" datatype="html">
+        <source> Back </source>
+        <target state="translated"> Atgal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelter-page/shelter-page.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uploadnewimage" datatype="html">
+        <source>Upload new image</source>
+        <target state="translated">Įkelti naują nuotrauką</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="save" datatype="html">
+        <source> Save </source>
+        <target state="translated"> Išsaugoti </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/pet-summary/pet-summary.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8243265617059229816" datatype="html">
+        <source>Breed, Size, Gender, Age</source>
+        <target state="translated">Veislė, dydis, lytis, amžius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <note priority="1" from="description">kazkas</note>
+      </trans-unit>
+      <trans-unit id="edit" datatype="html">
+        <source> EDIT </source>
+        <target state="translated">REDAGUOTI</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-pets/user-pets.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pets" datatype="html">
+        <source>Your pets</source>
+        <target state="translated">Jūsų augintiniai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

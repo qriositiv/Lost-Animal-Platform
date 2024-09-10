@@ -1,0 +1,93 @@
+<div class="grid grid-cols-1 gap-4">
+        <div class="border-b-2 border-gray-300">
+            <h2 class="text-lg font-semibold mb-3" i18n="@@reportType">Report Type</h2>
+            <div class="flex flex-wrap justify-center items-center">
+                <label class="flex items-center mb-2 mr-4">
+                    <input type="checkbox" name="LOST" value="LOST" class="accent-rose-400" [(ngModel)]="lostChecked" (change)="onCheckboxChange($event)">
+                    <span class="rounded-full px-1 py-1" i18n="@@lost">LOST</span>
+                </label>
+                <label class="flex items-center mb-2 mr-4">
+                    <input type="checkbox" name="SEEN" value="SEEN" class="accent-emerald-400" [(ngModel)]="seenChecked" (change)="onCheckboxChange($event)">
+                    <span class="rounded-full px-1 py-1" i18n="@@seen">SEEN</span>
+                </label>
+                <label class="flex items-center mb-2 mr-4">
+                    <input type="checkbox" name="FOUND" value="FOUND" class="accent-indigo-400" [(ngModel)]="foundChecked" (change)="onCheckboxChange($event)">
+                    <span class="rounded-full px-1 py-1" i18n="@@found">FOUND</span>
+                </label>
+            </div>
+        </div>
+        <div class="border-b-2 border-gray-300 justify-center">
+            <h2 class="text-lg font-semibold mb-3" i18n="@@searchdistance">Search distance</h2>
+            <div class="flex">
+            <input type="text" class="border border-gray-300 rounded-md px-2 py-1 w-full" placeholder="" [(ngModel)]="selectedOptions.location">
+            <button class="bg-emerald-400 hover:bg-emerald-500 text-white p-2 rounded-md w-10 self-center ml-2" (click)="onLocationInputChange()">🔍</button>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+                <input type="range" name="distance" min="10" max="40" class="mt-2 w-full" (change)="onRangeChange($event, 'distance')" [(ngModel)]="selectedOptions.distance">
+              <div class="flex justify-between w-full text-sm">
+                    <span>10</span>
+                    <span>20</span>
+                    <span>30</span>
+                    <span>40</span>
+                </div>
+              <div class="justify-center">km</div>
+            </div>
+        </div>
+        <div class="border-b-2 border-gray-300">
+            <h2 class="text-lg font-semibold mb-3" i18n="@@publishedinthelast">Published in the last</h2>
+            <div class="flex flex-col items-center mb-4">
+                <input type="range" name="published" min="1" max="336" class="mt-2 w-full" (change)="onRangeChange($event, 'published')" [(ngModel)]="selectedOptions.published">
+                <div class="flex justify-between w-full text-sm">
+                  <span>1h</span>
+                  <span>7d</span>
+                  <span>14d</span>
+                </div>
+            </div>
+        </div>
+        <div class="border-b-2 border-gray-300">
+            <h2 class="text-lg font-semibold mb-2" i18n="@@animaltype">Animal type</h2>
+            <div class="flex flex-wrap justify-center items-center space-x-4 mb-4">
+                <label class="flex items-center text-lg"><input type="checkbox" name="DOG" value="dog" class="accent-emerald-400" (change)="onCheckboxChange($event)" [(ngModel)]="dogChecked">
+                    <ng-container i18n="@@dog">Dog</ng-container>
+                </label>
+                <label class="flex items-center text-lg"><input type="checkbox" name="CAT" value="cat" class="accent-emerald-400" (change)="onCheckboxChange($event)" [(ngModel)]="catChecked">
+                    <ng-container i18n="@@cat">Cat</ng-container>
+                </label>
+                <label class="flex items-center text-lg"><input type="checkbox" name="OTHER" value="other" class="accent-emerald-400" (change)="onCheckboxChange($event)" [(ngModel)]="otherChecked">
+                    <ng-container i18n="@@other">Other</ng-container>
+                </label>
+            </div>
+        </div>
+        <div class="border-b-2 border-gray-300">
+            <h2 class="text-lg font-semibold mb-3" i18n="@@breed">Breed</h2>
+            <div class="flex mb-4">
+                <input type="text" class="border border-gray-300 rounded-xl px-2 py-1 mr-2 w-full" placeholder="" [(ngModel)]="newBreed">
+                <button class="bg-emerald-400 hover:bg-emerald-500 text-white px-4 py-2 rounded-full" i18n="@@add" (click)="addBreed()">Add</button>
+            </div>
+            <div class="text-left">
+                @for (breed of selectedOptions.petDataRequest.petBreedList; track breed) {
+                    <div class="flex">
+                        <p class="w-full">{{breed}}</p>
+                        <button class="text-red-500 hover:text-red-700 ml-2" i18n="@@remove" (click)="removeBreed(breed)">Remove</button>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="border-b-2 border-gray-300">
+            <div class="flex flex-wrap justify-center items-center space-x-4 mb-4">
+                <h2 class="text-lg font-semibold" i18n="@@gender">Gender</h2>
+                <div class="flex space-x-4">
+                <label class="flex items-center text-base accent-emerald-400"><input type="checkbox" name="MALE" value="male" [(ngModel)]="maleChecked" (change)="onCheckboxChange($event)">
+                    <span class="ml-1" i18n="@@male">Male</span>
+                </label>
+                <label class="flex items-center text-base accent-emerald-400"><input type="checkbox" name="FEMALE" value="female" [(ngModel)]="femaleChecked" (change)="onCheckboxChange($event)">
+                    <span class="ml-1" i18n="@@female">Female</span>
+                </label>
+                </div>
+            </div>
+        </div>
+        <div class="border-b-2 border-gray-300">
+        <h2 class="text-lg font-semibold mb-2" i18n="@@createdby">Created by</h2>
+            <input type="text" class="border border-gray-300 rounded-xl px-2 py-1 mb-4 w-full" placeholder="" [(ngModel)]="selectedOptions.reportCreator" (input)="onCreatorChange($event)">
+        </div>
+</div>

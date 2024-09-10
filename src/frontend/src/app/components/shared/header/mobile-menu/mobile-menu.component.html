@@ -1,0 +1,61 @@
+<div clickedOutside (clickOutside)="onClickedOutside()">
+  <!-- Hamburger menu for Mobile -->
+  <button class="text-zinc-300 focus:outline-none" (click)="toggleDropdown()">
+    <fa-icon [icon]="faBars"></fa-icon>
+  </button>
+
+  <!-- Sidebar -->
+  <div
+    class="z-50 md:hidden fixed inset-y-0 left-0 w-48 bg-emerald-600 text-white transition-transform duration-300 transform"
+    [class.translate-x-0]="dropdownOpen"
+    [class.-translate-x-full]="!dropdownOpen"
+  >
+    <ul class="px-6 py-1 mt-6 flex flex-col space-y-6 items-start h-full">
+      <li>
+        <a
+          class="hover:bg-emerald-400 rounded-full p-3 hover:text-zinc-200"
+          routerLink="/search"
+          (click)="toggleDropdown()"
+          i18n="@@search"
+          >Search</a
+        >
+      </li>
+      <li>
+        <a
+          class="hover:bg-emerald-400 rounded-full p-3 hover:text-zinc-200"
+          routerLink="/tips"
+          (click)="toggleDropdown()"
+          i18n="@@resources"
+          >Recources</a
+        >
+      </li>
+      <li>
+        <a
+          class="hover:bg-emerald-400 rounded-full p-3 hover:text-zinc-200"
+          routerLink="/"
+          (click)="toggleDropdown()"
+          i18n="@@language"
+          >Language</a
+        >
+      </li>
+      <li>
+        <a
+          class="hover:bg-emerald-400 rounded-full p-3 hover:text-zinc-200"
+          routerLink="/profile"
+          (click)="toggleDropdown()"
+          i18n="@@profile"
+          >Profile</a
+        >
+      </li>
+      <li>
+        <a
+          class="hover:bg-emerald-400 rounded-full p-3 hover:text-zinc-200"
+          routerLink="/settings"
+          (click)="toggleDropdown()"
+          i18n="@@settings"
+          >Settings</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>

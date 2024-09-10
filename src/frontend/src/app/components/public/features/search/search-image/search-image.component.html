@@ -1,0 +1,78 @@
+@if (currentStep === "location") {
+<app-address-input (locationUpdatedEvent)="getLocationData($event)"></app-address-input>
+}
+@if (currentStep === "image-upload") {
+<div class="md:flex md:items-start pt-4 w-3/4 max-lg:w-11/12 mx-auto">
+  <div class="md:w-1/2 px-4 place-content-start">
+    <app-image-upload-ngx (imageCroppedEvent)="onImageUpload($event)"></app-image-upload-ngx>
+  </div>
+
+  <div class="w-full md:w-1/2 p-8 rounded-lg border mb-4 flex flex-col">
+    <form [formGroup]="quickCompareForm" (ngSubmit)="onSubmit()">
+      <div class="grid gap-5">
+        <div>
+          <label for="pet_type" class="block text-gray-700 text-base ml-2 font-semibold required"
+            i18n="@@type">Type</label>
+          <select id="pet_type" type="pet_type" formControlName="petType" class="w-full px-4 py-2 border rounded-md">
+            <option [value]="Animal.Dog" i18n="@@dog">Dog</option>
+            <option [value]="Animal.Cat" i18n="@@cat">Cat</option>
+            <option [value]="Animal.Other" i18n="@@other">Other</option>
+          </select>
+        </div>
+
+        <div class="relative w-full mb-4">
+          <!--          <label for="pet_breed" class="block text-gray-700 text-base ml-2 font-semibold"><ng-container-->
+          <!--              i18n="breed">Breed</ng-container>-->
+          <!--          </label>-->
+          <!--          <input type="pet_breed" id="pet_breed" formControlName="pet_breed" autocomplete="off" (focus)="onFocus()"-->
+          <!--            (blur)="onBlur()" placeholder="Breed name"-->
+          <!--            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" />-->
+          <!--          <div *ngIf="filteredBreeds.length > 0 && isInputFocused"-->
+          <!--            class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg">-->
+          <!--            <ul class="max-h-40 overflow-auto">-->
+          <!--              <li *ngFor="let breed of filteredBreeds; let i = index" (click)="selectBreed(breed)"-->
+          <!--                class="p-2 hover:bg-gray-200 cursor-pointer" [class.bg-gray-200]="i === highlightedIndex" #breedItem>-->
+          <!--                {{ breed }}-->
+          <!--              </li>-->
+          <!--            </ul>-->
+          <!--          </div>-->
+        </div>
+
+        <div class="mt-8 flex justify-center">
+          <button type="submit"
+            class="text-nowrap text-white bg-emerald-400 hover:bg-emerald-500 focus:outline-none font-bold rounded-full md:px-9 md:py-3 px-7 py-3 text-center me-2 mb-2"
+            [ngClass]="{
+            'button-enabled': quickCompareForm.valid,
+            'button-disabled': !quickCompareForm.valid
+          }" [disabled]="!quickCompareForm.valid">
+            Find pet
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+}
+
+@if (currentStep === "summary") {
+<div class="h-dvh flex items-center justify-center w-3/4 max-lg:w-11/12 mx-auto">
+  <div>
+    <div class="flex flex-col space-y-4 text-center mb-10">
+      <h1 class="font-bold md:text-6xl text-3xl">Most similar reports</h1>
+      <p class="md:text-xl text-gray-700">Results after image comparisons</p>
+    </div>
+    <div class="md:flex justify-between space-x-4">
+      @if(responseData){
+      @for (report of responseData; track report) {
+      <div class="w-1/4 flex flex-col items-center text-center hover:text-emerald-400" (click)="openModal(report)">
+        <app-report-box [repSim]="report"></app-report-box>
+      </div>
+      }
+      @if (selectedReportId) {
+      <app-report-popup (closeModal)="onCloseModal()" [reportId]="selectedReportId"></app-report-popup>
+      }
+      }
+    </div>
+  </div>
+</div>
+}

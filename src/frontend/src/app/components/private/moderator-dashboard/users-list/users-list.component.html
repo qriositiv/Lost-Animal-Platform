@@ -1,0 +1,62 @@
+<div class="min-h-dvh items-center justify-center w-3/4 max-lg:w-11/12 mx-auto">
+  <div class="flex md:space-x-4 space-x-2 w-full justify-between my-4">
+    <div class="relative flex space-x-1">
+      <div>
+        <button class="border border-gray-300 px-2 py-2 rounded-md md:hidden"></button>
+      </div>
+    </div>
+    <input type="text" class="border border-gray-300 px-4 py-2 rounded-md italic flex-grow" />
+    <button class="border border-gray-300 px-4 py-2 rounded-md bold" i18n="@@search">Search</button>
+  </div>
+  @for(userProfile of AllProfiles; track $index) {
+  <div class="flex bg-white w-full pt-10">
+    <div class="relative max-sm:hidden">
+      <div
+        class="w-48 h-48 bg-emerald-100 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-6 -ml-12 items-center justify-center text-emerald-500"
+      >
+        <div class="absolute inset-0 flex items-center justify-center">
+          <p class="text-center text-xl text-indigo-500 bg-indigo-200 rounded-full mt-40 px-5 py-1">User</p>
+        </div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdfSSB8MhLNCiWcnHmkXfePtIdsoIeqxNrcrKDK-pehQ&s"
+          class="rounded-full"
+        />
+      </div>
+    </div>
+    <div
+      class="w-full border rounded-lg md:h-36 max-sm:flex max-sm:justify-center max-sm:text-center max-sm:pb-2 border-zinc-800"
+    >
+      <div class="md:ml-40 mt-3 mx-3">
+        <div class="md:flex justify-between">
+          <div>
+            <h1 class="md:text-4xl max-sm:text-xl max-sm:font-bold font-medium text-zinc-700">
+              {{ userProfile.firstName }} {{ userProfile.lastName }}
+            </h1>
+            <a class="font-light text-base text-emerald-400 mt-3">{{ userProfile.username }}</a>
+            <p class="mt-4 text-zinc-500 md:text-lg max-sm:text-small">User since: 2024-04-31</p>
+          </div>
+          <div class="my-auto mr-3 space-y-2">
+            <p class="text-zinc-500 md:text-lg">
+              Phone: <span class="pt-1 mr-1 rounded-md"></span
+              ><span class="text-emerald-400">{{ userProfile.telephone }}</span>
+            </p>
+            <p class="text-zinc-500 md:text-lg">
+              Email: <span class="text-emerald-400">{{ userProfile.email }}</span>
+            </p>
+          </div>
+          <div class="my-auto flex space-x-8 text-center max-sm:hidden">
+            <div>
+              <p class="font-bold text-zinc-700 text-xl">{{ userProfile.totalUserReportCount }}</p>
+              <p class="text-zinc-400" i18n="@@report">Report</p>
+            </div>
+            <div>
+              <p class="font-bold text-zinc-700 text-xl">{{ userProfile.totalUserCommentCount }}</p>
+              <p class="text-zinc-400" i18n="@@comments">Comments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</div>

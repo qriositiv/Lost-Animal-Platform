@@ -1,0 +1,41 @@
+<div class="min-h-dvh flex items-center justify-center w-3/4 max-lg:w-11/12 mx-auto max-sm:py-4">
+  <div>
+    <div class="flex flex-col md:space-y-4 text-center md:mb-10">
+      <h1 class="font-bold md:text-6xl text-3xl" i18n="@@search">Search</h1>
+      <p class="md:text-xl text-gray-700" i18n="@@SEARCH.DESCRIPTION">Begin your search through existing reports.</p>
+    </div>
+    <div class="md:flex md:justify-between md:space-x-4 max-sm:space-y-4">
+      <a
+        class="md:w-1/4 w-2/4 md:mx-0 mx-auto flex flex-col items-center text-center hover:text-emerald-400"
+        routerLink="/search-reports"
+      >
+        <img src="assets/list.png" class="transition duration-300 ease-in-out transform hover:scale-110 w-10/12" />
+        <h2 class="md:text-3xl text-xl font-bold" i18n="@@list">List</h2>
+        <p class="text-sm text-zinc-500" i18n="@@SEARCH.LIST.DESCRIPTION">View reports in a convenient list format.</p>
+      </a>
+      <a
+        class="md:w-1/4 w-2/4 md:mx-0 mx-auto flex flex-col items-center text-center hover:text-emerald-400"
+        routerLink="/search-map"
+      >
+        <img src="assets/map.png" class="transition duration-300 ease-in-out transform hover:scale-110 w-10/12" />
+        <h2 class="md:text-3xl text-xl font-bold" i18n="@@map">Map</h2>
+        <p class="text-sm text-zinc-500" i18n="@@SEARCH.MAP.DESCRIPTION">
+          Visualize report locations on an interactive map.
+        </p>
+      </a>
+      <a
+        class="md:w-1/4 w-2/4 md:mx-0 mx-auto flex flex-col items-center text-center hover:text-emerald-400"
+        routerLink="/search-image"
+        [queryParams]="{ step: 'location' }"
+      >
+        <img src="assets/analysis.png" class="transition duration-300 ease-in-out transform hover:scale-110 w-10/12" />
+        <h2 class="md:text-3xl text-xl font-bold" i18n="@@findbyimage">Find by image</h2>
+        <p class="text-sm text-zinc-500" i18n="@@SEARCH.FINDBYIMAGE.DESCRIPTION">
+          Use image comparison and recognition algorithms to search for similar reports.
+        </p>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Ziauriai patinka nuotrauka
+https://pet-spot-bucket.s3.us-west-2.amazonaws.com/pet-alert-1.png -->

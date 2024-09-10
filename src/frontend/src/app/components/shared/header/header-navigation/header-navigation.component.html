@@ -1,0 +1,15 @@
+<ul class="flex space-x-4" clickedOutside (clickOutside)="onClickedOutside()">
+  <li *ngFor="let menu of categories; let i = index" class="text-lg mr-6">
+    <!-- menu item -->
+    <a *ngIf="!menu.isDropDownMenu" [routerLink]="menu.route"
+      ><span class="text-zinc-100 hover:text-emerald-700 font-semibold">{{ menu.description }}</span></a
+    >
+
+    <!-- Dropdown menu toggle -->
+    <div class="relative">
+      <a *ngIf="menu.isDropDownMenu" class="cursor-pointer select-none" (click)="toggleDropdown(i)">
+        <span class="text-zinc-100 hover:text-emerald-700 font-semibold">{{ menu.description }}</span>
+      </a>
+    </div>
+  </li>
+</ul>

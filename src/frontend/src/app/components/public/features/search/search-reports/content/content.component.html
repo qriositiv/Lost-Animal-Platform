@@ -1,0 +1,11 @@
+<div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+  @for (report of allReports; track report) {
+    <div class="w-480 border border-zinc-800 hover:border-blue-500 rounded" (click)="openModal(report)">
+      <app-report-box [report]="report"></app-report-box>
+    </div>
+  }
+</div>
+
+@if (selectedReportId) {
+  <app-report-popup (closeModal)="onCloseModal()" [reportId]="selectedReportId"></app-report-popup>
+}

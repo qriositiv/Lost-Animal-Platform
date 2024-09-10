@@ -1,0 +1,234 @@
+---
+stages: [get-time-report, test, build, deploy]
+variables:
+  PYTHON_BACKEND: ${CI_PROJECT_DIR}/src/python-backend
+  SPRING_BACKEND: ${CI_PROJECT_DIR}/src/backend
+  FRONTEND: ${CI_PROJECT_DIR}/src/frontend
+get-time-report:
+  stage: get-time-report
+  script:
+    - apk add --no-cache curl
+    - CURRENT_DATE=$(date +%Y-%m-%d)
+    # example is https://developers.track.toggl.com/docs/reports/exports
+
+    # MEMBER time reports generation.
+    - >
+      curl -X POST \
+        -H "Content-Type: application/json" \
+        -d '{
+          "start_date": "2024-02-05",
+          "end_date": "'$CURRENT_DATE'",
+          "project_ids": [199580933],
+          "order_by": "duration",
+          "order_dir": "ASC",
+          "grouping": "projects",
+          "sub_grouping": "users"
+        }' \
+        -o timelogs/${WEEK_COUNT}_member_total_time_report.pdf \
+        -u $TOGGL_TRACK_EMAIL:$TOGGL_TRACK_PASS \
+        https://api.track.toggl.com/reports/api/v3/workspace/7292654/summary/time_entries.pdf
+
+    # Meeting time reports generation
+    - >
+      curl -X POST \
+        -H "Content-Type: application/json" \
+        -d '{
+          "start_date": "2024-02-05",
+          "end_date": "'$CURRENT_DATE'",
+          "project_ids": [199581340],
+          "order_by": "duration",
+          "order_dir": "ASC",
+          "grouping": "projects"
+        }' \
+        -o timelogs/${WEEK_COUNT}_meeting_total_time_report.pdf \
+        -u $TOGGL_TRACK_EMAIL:$TOGGL_TRACK_PASS \
+        https://api.track.toggl.com/reports/api/v3/workspace/7292654/summary/time_entries.pdf
+
+    # Encoding to pass through git API using curl.
+    - export MEMBER_BASE64_CONTENT=$(base64 timelogs/${WEEK_COUNT}_member_total_time_report.pdf)
+    - export MEETING_BASE64_CONTENT=$(base64 timelogs/${WEEK_COUNT}_meeting_total_time_report.pdf)
+    - UPDATE_WEEK_COUNT=$((WEEK_COUNT + 1))
+
+    # Example is @ https://forum.gitlab.com/t/put-file-in-repository-with-curl-api/87241
+    - >
+      curl --request POST \
+          --form "branch=development" \
+          --form "commit_message=AUTOMATIC TIMELOG BY CI/CD" \
+          --form "start_branch=development" \
+          --form "actions[][action]=create" \
+          --form "actions[][file_path]=timelogs/${WEEK_COUNT}_member_total_time_report.pdf"
+      \
+          --form "actions[][content]=$MEMBER_BASE64_CONTENT" \
+          --form "actions[][encoding]=base64" \
+          --form "actions[][action]=create" \
+          --form "actions[][file_path]=timelogs/${WEEK_COUNT}_meeting_total_time_report.pdf"
+      \
+          --form "actions[][content]=$MEETING_BASE64_CONTENT" \
+          --form "actions[][encoding]=base64" \
+          --header "PRIVATE-TOKEN: $ACCESS_TOKEN" \
+          "https://git.mif.vu.lt/api/v4/projects/4515/repository/commits"
+    - >
+      curl --request PUT --header "PRIVATE-TOKEN: $ACCESS_TOKEN" \
+          --form "value=$UPDATE_WEEK_COUNT" \
+         "https://git.mif.vu.lt/api/v4/projects/4515/variables/WEEK_COUNT"
+  # will only run on development branch and if pipeline is ran by schedule.
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule" && $CI_COMMIT_BRANCH == "development"
+      when: always
+    - when: never
+# test_spring:
+#   stage: test
+#   image: 3.9.6-amazoncorretto-21
+#   script:
+#     - cd $SPRING_BACKEND
+#     - ./mvnw test 
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+# test_python:
+#   stage: test
+#   image: python:3.11
+#   before_script:
+#     - pip install poetry
+#     - poetry config virtualenvs.in-project true
+#   script:
+#     - cd ${PYTHON_BACKEND}
+#     - poetry install
+#     - poetry run coverage run -m pytest
+#   artifacts:
+#     when: always
+#     paths:
+#       - ${PYTHON_BACKEND}/.coverage
+#       - ${PYTHON_BACKEND}/htmlcov/
+#     expire_in: "30 days"
+#   cache:
+#     key: ${CI_COMMIT_REF_SLUG}
+#     paths:
+#       - ${PYTHON_BACKEND}/.venv/
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'       
+# test_angular:
+#   stage: test
+#   image: node:lts-alpine
+#   before_script:
+#     - cd ${FRONTEND}
+#     - apt-get update && apt-get install -y firefox
+#     - npm install
+#   script:
+#     - npm run test -- --no-watch --no-progress --browsers=FirefoxHeadless
+#   artifacts:
+#     when: always
+#     paths:
+#       - ${FRONTEND}/coverage/
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+#   cache:
+#     key: ${CI_COMMIT_REF_SLUG}
+#     paths:
+#       - ${FRONTEND}/node_modules/
+generate_env:
+  stage: build
+  before_script: [apk add --no-cache bash]
+  script:
+    - cd $SPRING_BACKEND/src/main/resources/
+    - |
+      cat <<EOF > .env
+      DATABASE_IP=$DATABASE_IP
+      DB_PORT=$DATABASE_PORT
+      DB_NAME=$DATABASE_NAME
+      DB_USERNAME=$DATABASE_USER
+      DB_PASSWORD=$DATABASE_USER_PASSWORD
+      SPRING_USERNAME=$SPRING_USERNAME
+      SPRING_PASSWORD=$SPRING_PASSWORD
+      JWT_SECRET=$JWT_SECRET
+      SPRING_EMAIL_PASS=$SPRING_MAIL_PASS
+      EOF
+    - cd $PYTHON_BACKEND
+    - |
+      cat <<EOF > .env
+      DATABASE_IP=$DATABASE_IP
+      DB_PORT=$DATABASE_PORT
+      DB_NAME=$DATABASE_NAME
+      DB_USERNAME=$DATABASE_USER
+      DB_PASSWORD=$DATABASE_USER_PASSWORD
+    - cd $FRONTEND/src/environment
+    - |
+      cat <<EOF > environment.ts
+      export const environment = {
+      production: true,
+        springApiUrl: '$SPRING_API_URL',
+        libretranslateApiUrl: '$LIBRETRANSLATE_API_URL',
+      };
+      EOF
+  artifacts:
+    paths:
+      - src/backend/src/main/resources/.env
+      - src/python-backend/.env
+      - src/frontend/src/environment/environment.ts
+    expire_in: 1 week
+build_spring:
+  stage: build
+  image: openjdk:21-jdk
+  needs: [generate_env]
+  script:
+    - ls -la src/backend/src/main/resources/
+    - cd ${SPRING_BACKEND}
+    - ./mvnw package -DskipTests
+    - mv target/StraySafe.jar $CI_PROJECT_DIR/StraySafe.jar
+  artifacts:
+    paths: [StraySafe.jar]
+    expire_in: 1 week
+build_python:
+  stage: build
+  image: python:3.11
+  needs: [build_spring]
+  before_script:
+    - pip install poetry
+    - poetry self add poetry-dotenv-plugin
+    - poetry config virtualenvs.in-project true
+  script:
+    - cd ${PYTHON_BACKEND}
+    - poetry install
+    - poetry build
+    - mv dist $CI_PROJECT_DIR/python-dist
+  artifacts:
+    paths: [python-dist/]
+    expire_in: 1 week
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths: ['${PYTHON_BACKEND}/.venv/']
+build_angular:
+  stage: build
+  image: node:lts-alpine
+  needs: [build_python]
+  script:
+    - cd ${FRONTEND}
+    - npm install --prefer-offline
+    - npm run build -- --verbose --configuration=production
+    - mv dist $CI_PROJECT_DIR/dist
+  artifacts:
+    paths: [dist/]
+    expire_in: 1 week
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths: ['${FRONTEND}/node_modules/']
+# deploy:
+#   stage: deploy
+#   image: ubuntu:latest
+#   needs: [build_python, build_angular, build_spring]
+#   before_script:
+#     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client sshpass -y )'
+#     - mkdir -p ~/.ssh
+#     - ssh-keyscan -H "$ANSIBLE_VM_HOST" >> ~/.ssh/known_hosts
+#   script:
+#     - >
+#       sshpass -p "$ANSIBLE_VM_PASS" ssh $ANSIBLE_VM_USER@$ANSIBLE_VM_HOST <<EOF
+#       cd ./ansible
+#       echo "$ANSIBLE_VAULT_PASS" > vault_pass.txt
+#       ansible-playbook website-download.yaml -i hosts --vault-password-file vault_pass.txt
+#       ansible-playbook database-setup.yaml -i hosts --vault-password-file vault_pass.txt
+#       rm vault_pass.txt
+#       EOF
+#     - rm temporary_keyfile
+#   rules:
+#     - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development"'
+#       when: on_success

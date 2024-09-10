@@ -1,0 +1,83 @@
+---
+- hosts: webservers
+  vars_files: [vault.yml]
+  vars:
+    ansible_become_pass: "{{ lookup('vars', 'webservers_' + inventory_hostname + '_pass') }}"  # imported from vault
+    USER: "{{ lookup('env','USER') }}"
+  become: true
+  tasks:
+    - name: Download Java 21
+      get_url:
+        url: https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
+        dest: /tmp/jdk-21_linux-x64_bin.deb
+        mode: '0644'
+    - name: Install downloaded Java 21 package
+      apt:
+        deb: /tmp/jdk-21_linux-x64_bin.deb
+    - name: Download pipx, libpq-dev, python3-dev, build-essential and python3-opencv
+        (this takes a while...)
+      apt:
+        name:
+          - pipx
+          - libpq-dev
+          - python3-dev
+          - python3-opencv
+          - build-essential
+        state: present
+        update-cache: true
+    - name: Deploy the Angular frontend Apache configuration
+      ansible.builtin.template:
+        src: apache/frontend.conf.j2
+        dest: /etc/apache2/sites-available/frontend.conf
+    - name: Configure Apache
+      ansible.builtin.shell: |
+        a2dissite 000-default.conf &&
+        a2ensite frontend.conf
+        a2enmod rewrite
+    - name: Restart Apache to apply changes
+      systemd:
+        name: apache2
+        state: restarted
+    - name: Create systemd service file for Spring Boot application
+      ansible.builtin.copy:
+        dest: /etc/systemd/system/spring-boot-app.service
+        content: |
+          [Unit]
+          Description=Spring Boot Application
+          After=syslog.target
+          [Service]
+          User=www-data
+          ExecStart=/usr/bin/java -jar /opt/StraySafe.jar
+          SuccessExitStatus=143
+          [Install]
+          WantedBy=multi-user.target
+    - name: Create systemd service file for Python backend
+      ansible.builtin.copy:
+        dest: /etc/systemd/system/python-app.service
+        content: |
+          [Unit]
+          Description=Gunicorn instance to serve straysafe python backend
+          After=network.target
+          [Service]
+          User=www-data
+          Group=www-data
+          WorkingDirectory=/home/{{ USER }}/.local/pipx/venvs/straysafe/lib/python3.11/site-packages
+          Environment="PATH=/home/{{ USER }}/.local/pipx/venvs/straysafe/bin"
+          ExecStart=/home/{{ USER }}/.local/pipx/venvs/straysafe/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 straysafe.run:app
+          [Install]
+          WantedBy=multi-user.target
+    - name: Reload systemd to recognize Spring Boot service
+      ansible.builtin.systemd:
+        daemon_reload: true
+    - name: Enable and start Spring Boot service
+      ansible.builtin.systemd:
+        name: spring-boot-app
+        enabled: true
+        state: started
+    - name: Enable and start Python service
+      ansible.builtin.systemd:
+        name: python-app
+        enabled: true
+        state: started
+    - debug:
+        msg: Setup complete, now need to download built files

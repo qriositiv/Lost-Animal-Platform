@@ -1,0 +1,61 @@
+---
+- hosts: databases
+  vars_files: [vault.yml]
+  vars:
+    ansible_become_pass: "{{ lookup('vars', 'databases_' + inventory_hostname + '_pass') }}"  # imported from vault
+    database_private_ip: "{{ lookup('vars', 'databases_' + inventory_hostname + '_private_ip') }}"
+    database_public_ip: "{{ lookup('vars', 'databases_' + inventory_hostname + '_public_ip') }}"
+    database_port: "{{ lookup('vars', 'databases_' + inventory_hostname + '_port') }}"
+    database_name: straysafe
+    database_user: straysafe
+    database_password: '{{ database_password }}'
+    ansible_ssh_pipelining: true  # Allow creation of temporary files on remote machine, else postgresql_user module will fail
+    sql_files: [tables.sql, breeds.sql]
+  become: true
+  tasks:
+    - name: Check if version file exists
+      stat:
+        path: /var/db_version
+      register: version_file
+    - name: Initialize version file if it doesn't exist
+      copy:
+        content: '2'
+        dest: /var/db_version
+      when: not version_file.stat.exists
+    - name: Read current version
+      command: cat /var/db_version
+      register: current_version
+    - name: Rename current database to version v{{ current_version.stdout }}
+      community.postgresql.postgresql_query:
+        db: postgres
+        login_user: '{{ database_user }}'
+        login_password: '{{ database_password }}'
+        query: ALTER DATABASE "{{ database_name }}" RENAME TO "{{ database_name }}_v{{
+          current_version.stdout }}";
+    - name: Increment version
+      shell: echo $(({{ current_version.stdout }} + 1)) > /var/db_version
+    - name: Create StraySafe database
+      postgresql_db:
+        state: present
+        name: '{{ database_name }}'
+      become_user: postgres
+    - name: Remove existing sql scripts folder
+      shell: rm -rf /tmp/sql_scripts
+    - name: Copy files
+      copy:
+        src: '{{ playbook_dir }}/sql_scripts'
+        dest: /tmp/sql_scripts
+    - name: Execute all scripts
+      community.postgresql.postgresql_script:
+        db: '{{ database_name }}'
+        login_user: '{{ database_user }}'
+        login_password: '{{ database_password }}'
+        path: /tmp/sql_scripts/{{ item }}
+      loop: '{{ sql_files }}'
+    - debug:
+        msg:
+          - 'connet to database from your computer with:'
+          - psql -h {{ database_public_ip }} -U straysafe -d straysafe -p {{ database_port }}
+          - 'connect to database from ansible vm using:'
+          - psql -h {{ database_private_ip }} -U straysafe -d straysafe
+

@@ -1,0 +1,84 @@
+<div class="lg:flex items-center justify-center space-x-10 w-full-auto bg-gradient-to-r">
+  <div class="lg:w-1/2 w-full">
+    <div class="px-16 py-2">
+      <div class="px-8 py-4 bg-white rounded-lg border border-zinc-400 my-8">
+        <form class="space-y-4">
+          <div
+            class="w-48 h-48 bg-emerald-100 mx-auto rounded-full shadow-2xl inset-x-0 top-0 items-center justify-center text-emerald-500"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg="
+              class="rounded-full"
+            />
+          </div>
+          <div class="flex justify-center">
+            <button class="text-emerald-400" i18n="@@uploadnewimage">Upload new image</button>
+          </div>
+          <div class="">
+            <label for="pet_name" class="block text-gray-700 text-base ml-2 font-semibold" i18n="@@petname"
+              >Pet name</label
+            >
+            <input
+              type="text"
+              id="pet_name"
+              name="pet_name"
+              placeholder="Pet name"
+              class="w-full px-4 py-2 border rounded-md"
+            />
+          </div>
+          <div class="">
+            <label class="block text-gray-700 text-base ml-2 font-semibold" i18n="@@type">Type</label>
+            <select id="pet_type" name="pet_type" class="w-full px-4 py-2 border rounded-md">
+              <option value="1" i18n="@@dog">Dog</option>
+              <option value="2" i18n="@@cat">Cat</option>
+              <option value="0" i18n="@@other">Other</option>
+            </select>
+          </div>
+          <div class="">
+            <label class="block text-gray-700 text-base ml-2 font-semibold" i18n="@@size">Size</label>
+            <select id="pet_size" name="pet_size" class="w-full px-4 py-2 border rounded-md">
+              <option value="1" i18n="@@small">Small</option>
+              <option value="2" i18n="@@medium">Medium</option>
+              <option value="3" i18n="@@big">Big</option>
+            </select>
+          </div>
+          <div class="">
+            <label class="block text-gray-700 text-base ml-2 font-semibold" i18n="@@gender">Gender</label>
+            <select id="pet_gender" name="pet_gender" class="w-full px-4 py-2 border rounded-md">
+              <option value="1" i18n="@@male">Male</option>
+              <option value="2" i18n="@@female">Female</option>
+            </select>
+          </div>
+          <div class="">
+            <label class="block text-gray-700 text-base ml-2 font-semibold" i18n="@@age">Age</label>
+            <select id="pet_age" name="pet_age" class="w-full px-4 py-2 border rounded-md">
+              <option value="1" i18n="@@young">Young</option>
+              <option value="2" i18n="@@adult">Adult</option>
+              <option value="3" i18n="@@senior">Senior</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="pet_name" class="block text-gray-700 text-base ml-2 font-semibold" i18n="@@breed">Breed</label>
+            <input
+              type="text"
+              id="pet_name"
+              name="pet_name"
+              placeholder="Pet name"
+              class="w-full px-4 py-2 border rounded-md"
+            />
+          </div>
+          <div class="mt-8 flex justify-center">
+            <button
+              routerLink="/settings"
+              type="button"
+              class="text-nowrap text-white bg-emerald-400 hover:bg-emerald-500 focus:outline-none font-bold rounded-full md:px-9 md:py-3 px-7 py-3 text-center me-2 mb-2"
+              i18n="@@save"
+            >
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="w-3/4 mt-6 px-4 mx-auto">
+  <p class="mb-8 text-base text-zinc-900 pb-2 border-b border-zinc-200">
+    <span class="text-lg font-normal rounded-full px-2 py-1 mr-2" [class.bg-rose-300]="reportType === Type.Lost"
+      [class.bg-lime-300]="reportType === Type.Seen" [class.bg-indigo-300]="reportType === Type.Found">
+      {{ translate.getTypeTranslation(reportType) | uppercase }}</span>
+
+    @if (reportType === Type.Lost) {
+    <ng-container i18n>Do not have your pet in this lists?</ng-container>
+    } @else {
+    <ng-container i18n>First time seeing this pet?</ng-container>
+    }
+    <button routerLink="/new-report" [queryParams]="{ type: reportType, step: 'new-pet' }"
+      class="text-emerald-400 hover:text-emerald-500" i18n="@@registeranewpet">
+      &nbsp;Register a new pet</button>.
+  </p>
+
+  <app-user-pets [editable]="2" (buttonClicked)="handlePetSelected($event)"></app-user-pets>
+
+  <div class="mt-4">
+    <label for="report_notes" class="block text-gray-700 text-base ml-2 font-semibold" i18n="additionalnotes">Additional
+      notes</label>
+    <textarea id="report_notes" formControlName="report_notes" placeholder="Write notes about your pet" maxlength="500"
+      class="w-full h-40 px-4 py-2 border rounded-md"></textarea>
+    <div class="text-right text-gray-500 mt-1">
+      {{ 500 - reportNotes.length }} <ng-container i19n>characters remaining</ng-container>
+    </div>
+  </div>
+  <div class="mb-6">
+    <div class="flex">
+      <input type="checkbox" id="report_contacts" formControlName="report_contacts"
+        class="w-4 h-4 mt-1 accent-emerald-400 rounded text-blue-500" />
+      <label for="report_contacts" class="block text-gray-700 text-base ml-2 required" i18n="contactsagreement">I agree
+        to share my contact information located in my profile</label>
+    </div>
+    <div class="flex mt-2">
+      <input type="checkbox" id="report_policy" formControlName="report_policy"
+        class="w-4 h-4 mt-1 accent-emerald-400 rounded text-blue-500" />
+      <label for="report_policy" class="block text-gray-700 text-base ml-2 required"><ng-container
+          i18n="iagreewiththe">I agree with the </ng-container>
+        <a class="text-emerald-400" (click)="openPrivacyPolicy()" i18n="@@privacypolicy">privacy policy</a></label>
+      @if (showPrivacyPolicy) {
+      <app-privacy-policy (closeModal)="onClosePreview()"></app-privacy-policy>
+      }
+    </div>
+  </div>
+  <div class="mt-8 flex justify-center">
+    <button type="submit"
+      class="text-nowrap text-white bg-emerald-400 hover:bg-emerald-500 focus:outline-none font-bold rounded-full md:px-9 md:py-3 px-7 py-3 text-center me-2 mb-2"
+      [ngClass]="{
+        'button-enabled': form.valid,
+        'button-disabled': !form.valid
+      }" [disabled]="!form.valid" i18n="@@submit">
+      Submit
+    </button>
+  </div>
+</form>

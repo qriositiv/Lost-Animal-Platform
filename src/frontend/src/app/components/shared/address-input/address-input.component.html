@@ -1,0 +1,53 @@
+<div class="flex flex-col align-center justify-center w-3/4 max-lg:w-11/12 mx-auto mt-5">
+  <h1 class="text-2xl font-bold text-center" i18n="@@specifythelocation">Specify the location</h1>
+  <p class="text-center text-zinc-500 dark:text-zinc-400 mb-2" i18n="@@indicatetheplacewhereyoulasttimesawthepet">
+    Indicate the place where you last saw the pet.
+  </p>
+  <div class="mb-2">
+    <div class="w-full flex justify-center">
+      <button
+        class="bg-zinc-400 hover:bg-emerald-500 text-white p-2 rounded-full w-10 self-center mr-2"
+        (click)="getLocation()"
+      >
+        📍
+      </button>
+      <div class="w-full">
+        <input
+          [(ngModel)]="location.address"
+          type="text"
+          class="border border-emerald-400 p-2 rounded-full w-full placeholder:italic"
+          [placeholder]="placeholder"
+          (keyup.enter)="searchAddress()"
+        />
+      </div>
+      <button
+        class="bg-emerald-400 hover:bg-emerald-500 text-white p-2 rounded-full w-32 self-center ml-2"
+        (click)="searchAddress()"
+        i18n="@@search"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+  <div class="flex justify-center w-full mb-4">
+    <div
+      class="border border-zinc-900 w-full h-[60vh] rounded-2xl"
+      leaflet
+      [leafletOptions]="options"
+      (leafletMapReady)="onMapReady($event)"
+    ></div>
+  </div>
+  <div class="flex justify-center">
+    @if (nextStepAvailable === false) {
+      <button class="bg-zinc-500 text-white p-2 rounded-full w-2/5" i18n="@@nextstep">Next Step 🡆</button>
+    } @else {
+      <button
+        class="bg-emerald-400 hover:bg-emerald-500 text-white p-2 rounded-full w-2/5"
+        (click)="goNextStep()"
+        i18n="@@nextstep"
+      >
+        Next Step 🡆
+      </button>
+    }
+  </div>
+</div>

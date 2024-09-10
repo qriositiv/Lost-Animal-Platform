@@ -1,0 +1,181 @@
+<div class="fixed inset-0 flex items-center justify-center bg-zinc-900 bg-opacity-50 z-10" (click)="close()">
+  <div class="fixed inset-0 flex items-center justify-center">
+    <div
+      class="bg-white p-5 md:w-4/5 md:h-4/5 w-10/12 h-5/6 overflow-auto rounded-2xl z-50"
+      (click)="$event.stopPropagation()"
+    >
+      <div class="flex justify-between mb-2">
+        <div class="text-left w-1/3 max-md:hidden">
+          <p class="text-zinc-500">
+            <ng-container i18n="@@author">Author</ng-container>: {{ report.user.firstName }} {{ report.user.lastName }}
+            <span class="text-emerald-400 cursor-pointer" (click)="onAuthorClick()">{{ report.user.username }}</span>
+          </p>
+        </div>
+        <div class="flex items-start justify-center md:w-1/3 w-1/2 flex-grow">
+          <p
+            class="md:text-lg text-base font-normal rounded-full px-3 py-1"
+            [class.bg-rose-300]="report.reportType === Type.Lost"
+            [class.bg-lime-300]="report.reportType === Type.Seen"
+            [class.bg-indigo-300]="report.reportType === Type.Found"
+          >
+            {{ translate.getTypeTranslation(report.reportType) }}
+          </p>
+          <div class="ml-2">
+            <h2 class="md:text-2xl text-lg text-center font-bold">
+              <ng-container class="text-nowrap">Pet Information</ng-container>
+            </h2>
+            <p class="text-zinc-500">
+              <ng-container i18n="@@posted">Posted</ng-container>: {{ report.createdAt | formatDateArray }}
+            </p>
+            <!-- <span class="text-zinc-500"
+            ><ng-container i18n="@@reportidentifier">report identifier</ng-container>:
+            <a class="text-emerald-400 underline">Report ID</a></span
+          > -->
+          </div>
+        </div>
+        <div class="flex-grow text-right md:w-1/3 w-1/2 md:space-x-2 md:text-2xl text-lg">
+          @if(user === report.user.username) {
+          <button
+            class="text-zinc-500 hover:text-indigo-400 py-2 px-4 rounded-full"
+            (click)="onUpdateReport(report.reportId)"
+          >
+            <fa-icon [icon]="faCircleCheck"></fa-icon>
+          </button>
+          } @if(user === report.user.username) {
+          <button class="text-zinc-500 hover:text-red-400 py-2 px-4 rounded-full" (click)="showModal(report.reportId)">
+            <fa-icon [icon]="faTrash"></fa-icon>
+          </button>
+          } @if(role === "MODERATOR") {
+          <button
+            class="text-zinc-500 hover:text-red-700 py-2 px-4 rounded-full"
+            (click)="onBlockReport(report.reportId)"
+          >
+            <fa-icon [icon]="faBlock"></fa-icon>
+          </button>
+          }
+          <button class="text-zinc-500 hover:text-rose-400 py-2 px-4 rounded-full" (click)="close()">
+            <fa-icon [icon]="faCircleClose" class="pl-4 border-l-2"></fa-icon>
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div class="md:flex justify-center mt-1 mb-4">
+        <div class="md:w-2/5 w-full">
+          <div
+            class="overflow-hidden p-4 flex flex-col items-center border rounded-md"
+            style="width: 100%; aspect-ratio: 1"
+          >
+            <img [src]="report.pet.petImage" class="object-cover rounded-lg" style="width: 100%; aspect-ratio: 1" />
+          </div>
+          <div class="mt-4 p-2 border rounded-2xl text-center">
+            <p class="text-xl mb-4" i18n="@@lastseenlocation">Last seen location</p>
+            <div
+              class="border border-zinc-900 w-full h-[25vh] rounded-2xl"
+              leaflet
+              [leafletOptions]="options"
+              (leafletMapReady)="onMapReady($event)"
+            ></div>
+            <p class="text-zinc-500">{{ report.address }}: {{ report.latitude }}, {{ report.longitude }}</p>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:mx-4 md:p-8 rounded-lg border mb-4 space-y-4 justify-center">
+          <div class="flex text-lg">
+            <label class="block text-zinc-700 ml-2 font-semibold" i18n="@@petname">Pet name</label>
+            <span class="px-4 rounded-md" readonly>{{ report.pet.petName | capitalizeFirst }}</span>
+          </div>
+
+          <div class="flex flex-wrap justify-between text-lg">
+            <div class="flex w-1/2 pr-2 mb-4">
+              <label class="block text-zinc-700 ml-2 font-semibold" i18n="@@animal">Animal</label>
+              <span class="w-full px-4 rounded-md" readonly>{{
+                translate.getAnimalTranslation(report.pet.petType) | capitalizeFirst
+              }}</span>
+            </div>
+            <div class="flex w-1/2 pr-2 mb-4">
+              <label class="block text-zinc-700 ml-2 font-semibold" i18n="@@breed">Breed</label>
+              <span class="px-4 focus:ring-blue-500 focus:border-blue-500" readonly>{{
+                report.pet.petBreed | capitalizeFirst
+              }}</span>
+            </div>
+            <div class="flex w-1/2 pl-2 mb-4">
+              <label class="block text-zinc-700 ml-2 font-semibold" i18n="@@size">Size</label>
+              <span class="w-full px-4 rounded-md" readonly>{{
+                translate.getSizeTranslation(report.pet.petSize) | capitalizeFirst
+              }}</span>
+            </div>
+            <div class="flex w-1/2 pr-2 mb-4">
+              <label class="block text-zinc-700 ml-2 font-semibold" i18n="@@gender">Gender</label>
+              <span class="w-full px-4 rounded-md" readonly>{{
+                translate.getGenderTranslation(report.pet.petGender) | capitalizeFirst
+              }}</span>
+            </div>
+            <div class="flex w-1/2 pl-2 mb-4">
+              <label class="block text-zinc-700 ml-2 font-semibold" i18n="@@age">Age</label>
+              <span class="w-full px-4 rounded-md" readonly>{{
+                translate.getAgeTranslation(report.pet.petAge) | capitalizeFirst
+              }}</span>
+            </div>
+          </div>
+
+          <div class="flex text-lg">
+            <label class="block text-zinc-700 ml-2 font-semibold" i18n="@@notes">Notes</label
+            ><button class="ml-2" (click)="translateNotes(report.note)">
+              <fa-icon
+                [icon]="faTranslate"
+                [class.text-zinc-500]="translated === false"
+                [class.text-emerald-500]="translated === true"
+              ></fa-icon>
+            </button>
+            <span class="w-full px-4" readonly>{{ report.note }}</span>
+          </div>
+
+          <div class="flex text-lg">
+            <label for="pet_name" class="block text-zinc-700 ml-2 font-semibold w-full" i18n="@@phonenumber"
+              >Phone number</label
+            >
+            <span class="w-full px-4" readonly>{{ report.user.telephone }}</span>
+          </div>
+
+          <div class="mt-4 p-2 border-2 rounded-md text-center">
+            <p class="text-2xl mb-4" i18n="@@reporttags">Report tags</p>
+            <div class="flex items-center justify-center">
+              <p class="rounded-full px-3 py-2 mr-2 bg-zinc-300">
+                {{ translate.getAnimalTranslation(report.pet.petType) | uppercase }}
+              </p>
+              <p
+                class="rounded-full px-3 py-2 mr-2 bg-zinc-300"
+                [class.bg-rose-300]="report.reportType === Type.Lost"
+                [class.bg-lime-300]="report.reportType === Type.Seen"
+                [class.bg-indigo-300]="report.reportType === Type.Found"
+              >
+                {{ translate.getTypeTranslation(report.reportType) }}
+              </p>
+              <p
+                class="rounded-full px-3 py-2 mr-2"
+                [class.bg-green-500]="report.reportStatus === Status.Active"
+                [class.bg-red-300]="report.reportStatus === Status.Inactive || report.reportStatus === Status.Blocked"
+                [class.bg-grey-300]="report.reportStatus === Status.Unknown"
+              >
+                {{ report.reportStatus }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 text-left">
+        <hr />
+        <p class="text-2xl mb-6 ml-2 font-bold" i18n="@@discussion">Discussion</p>
+        <app-comments [allComments]="allComments" [reportId]="report.reportId"></app-comments>
+      </div>
+    </div>
+  </div>
+  @if(isModalVisible){
+  <app-confirmation-popup
+    [petId]="selectedReportId"
+    (closeModal)="_closeModal()"
+    (confirmDeletion)="onDeleteReport(report.reportId)"
+    (click)="$event.stopPropagation()"
+  ></app-confirmation-popup>
+  }
+</div>

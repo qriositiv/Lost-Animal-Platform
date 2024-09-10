@@ -1,0 +1,85 @@
+<div
+  class="lg:flex items-center justify-center space-x-10 w-full-auto bg-gradient-to-r"
+  style="
+    background-image: url('https://img.freepik.com/free-vector/cute-playful-footprint-pattern-background-fauna-fun_1017-44713.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1714694400&semt=ais');
+    background-repeat: repeat;
+  "
+>
+  <div class="lg:w-1/2 w-full">
+    <div class="md:px-16 px-2 py-2">
+      <div class="p-8 bg-white rounded-lg border border-zinc-400 my-24">
+        <div class="grid grid-cols-1">
+          <div class="flex justify-between text-center order-last">
+            <div>
+              <p class="font-bold text-zinc-700 text-xl">{{ userProfile.totalUserReportCount }}</p>
+              <p class="text-zinc-400" i18n="@@report">Report</p>
+            </div>
+            <div>
+              <p class="font-bold text-zinc-700 text-xl">{{ userProfile.totalUserCommentCount }}</p>
+              <p class="text-zinc-400" i18n="@@comments">Comments</p>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="md:w-48 md:h-48 w-40 h-40 bg-emerald-100 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 items-center justify-center text-emerald-500"
+            >
+              <div class="absolute inset-0 flex items-center justify-center">
+                <p
+                  class="text-center text-xl text-zinc-700 rounded-full mt-40 px-5 py-1"
+                  [class.bg-emerald-200]="userProfile.role === 'USER'"
+                  [class.bg-orange-200]="userProfile.role === 'SHELTER'"
+                  [class.bg-cyan-200]="userProfile.role === 'MODERATOR'"
+                >
+                  {{ userProfile.role }}
+                </p>
+              </div>
+              <img
+                src="https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg="
+                class="rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 text-center border-b pb-4">
+          <div class="flex justify-center">
+            <h1 class="text-4xl font-medium text-zinc-700">{{ userProfile.firstName }} {{ userProfile.lastName }}</h1>
+          </div>
+          <a class="font-light text-xl text-emerald-400 mt-3">{{ userProfile.username }}</a>
+          <p class="mt-4 text-zinc-500">User since: {{ userProfile.createdAt | formatDateArray | shortDate }}</p>
+          <p class="text-zinc-500">
+            Phone: <span class="pt-1 mr-1 rounded-md"></span
+            ><span class="text-emerald-400">{{ userProfile.telephone }}</span>
+          </p>
+          <p class="text-zinc-500">
+            Email: <span class="text-emerald-400">{{ userProfile.email }}</span>
+          </p>
+          <div>
+            <button
+              class="text-nowrap mt-2 text-white bg-emerald-400 hover:bg-emerald-500 focus:outline-none font-bold rounded-full md:px-12 md:py-3 px-7 py-3 text-center me-2 mb-2"
+              (click)="openUserReports(userProfile.username)"
+            >
+              View reports
+            </button>
+          </div>
+        </div>
+
+        <h1 class="text-2xl text-center font-medium text-zinc-700 mt-2" i18n="@@pets">Pets</h1>
+        @if(userProfile.username) {
+        <div class="md:ml-8 md:my-4 my-1">
+          <app-user-pets [username]="userProfile.username"></app-user-pets>
+        </div>
+        } @if(guestRole === "MODERATOR") {
+        <div class="flex justify-center border-t pt-2">
+          <button
+            class="text-xl text-white bg-red-400 hover:bg-red-500 py-2 px-4 rounded-full"
+            (click)="onBlockUser(userProfile.userId)"
+          >
+            <fa-icon [icon]="faBlock" class="mr-1"></fa-icon>Block user
+          </button>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

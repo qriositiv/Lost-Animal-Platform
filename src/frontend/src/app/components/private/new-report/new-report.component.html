@@ -1,0 +1,9 @@
+<div>
+  <app-address-input
+    *ngIf="currentStep === 'location'"
+    (locationUpdatedEvent)="getLocationData($event)"
+    [type]="getReportType()"
+  ></app-address-input>
+  <app-report-pet-selection *ngIf="currentStep === 'pet-selection'" [form]="reportForm" (buttonClicked)="onSubmit()"></app-report-pet-selection>
+  <app-new-pet *ngIf="currentStep === 'new-pet'" [type]="getReportType()"></app-new-pet>
+</div>

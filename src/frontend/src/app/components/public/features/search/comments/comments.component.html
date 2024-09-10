@@ -1,0 +1,49 @@
+@for (comment of allComments; track $index) {
+<div class="flex items-start mb-4">
+  <img src="https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=" alt="User Image" class="w-16 h-16 rounded-full mr-4" />
+  <div class="flex flex-col">
+    <div class="flex items-center mb-2">
+      <button class="font-semibold text-gray-700 mr-2 hover:text-emerald-400" (click)="openProfile(comment.username)">
+        {{ comment.username }}
+      </button>
+      <p class="text-gray-500">{{ comment.role }}</p>
+      <p class="text-sm text-gray-500 ml-2">Posted on {{ comment.createdAt | formatDateArray }}</p>
+      <button class="ml-2" (click)="translateNotes(comment, $index)">
+        <fa-icon
+          [icon]="faTranslate"
+          [class.text-zinc-500]="translated[$index] === false"
+          [class.text-emerald-500]="translated[$index] === true"
+        ></fa-icon>
+      </button>
+      @if(comment.username === username || role === "MODERATOR") {
+      <button class="ml-2 hover:text-rose-500" (click)="onDelete(comment.commentId)">
+        <fa-icon [icon]="faDelete"></fa-icon>
+      </button>
+      }
+    </div>
+    <p class="">{{ comment.comment }}</p>
+  </div>
+</div>
+}
+<div class="flex items-start mb-4">
+  <form [formGroup]="newCommentForm" (ngSubmit)="onSubmit()" class="w-full">
+    <div class="mb-4">
+      <label for="comment" class="block text-gray-700 text-base font-bold">Add your comment here:</label>
+      <textarea
+        id="comment"
+        name="comment"
+        formControlName="comment"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        placeholder="Your comment"
+      ></textarea>
+    </div>
+    <div class="flex items-center justify-between">
+      <button
+        type="submit"
+        class="bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+      >
+        Add Comment
+      </button>
+    </div>
+  </form>
+</div>

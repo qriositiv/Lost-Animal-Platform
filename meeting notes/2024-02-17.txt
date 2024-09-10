@@ -1,0 +1,19 @@
+The difficult things we will do: image cropping, analyzing (what animal, what information it has) and search algorithm
+Functional, Non-functional requirements need update.
+Use a monolithic architecture
+When master is updated a pipeline is run in order to set up it on VM
+Design will change in workshops
+Leave a default range and do not make user input it.
+Be able to input multiple images and leave one as main image to analyze
+
+HOMEWORK:
+Edvinas:
+Pipeline (not finish)
+
+Renaldas:
+ansible-vm setup
+Project analysis
+
+Arsenij:
+Database design
+Navbar 

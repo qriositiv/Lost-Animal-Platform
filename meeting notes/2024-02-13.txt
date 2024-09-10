@@ -1,0 +1,19 @@
+In america approx 3% lose their pets. Lithuania has 2.8 mil people. 66% people in Lithuania have dogs or cats. 1.782 mil have pets. 4.5% lose pets. 80190 people lose their pets. Max in Lithunia it could have 220 posts.
+Use API in facebook
+Create an AI model to filter images
+Put only contact info for nearest shelter, no special privileges
+After inputting lost pet, it should give a grid view of found pets in that area
+
+Homework:
+ALL:
+think of how the website should look like.
+
+Renaldas:
+System architecture
+
+Edvinas:
+Seperate reports
+Navbar 🙂
+
+Arsenij:
+Work more in-depth with preliminary analysis

@@ -1,0 +1,15 @@
+Forgot notes.
+Homework:
+Edvinas:
+Prototipą įdėti į prezentacija
+MariaDB ansible
+
+Renaldas
+Initialize spring boot
+Check prezentation
+Create gitlab issues
+
+Arsenij
+Prototipa į skaidrės
+Duomenų bazės su user
+SQL surašyti

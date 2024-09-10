@@ -1,0 +1,65 @@
+---
+- hosts: webservers
+  vars_files: [vault.yml]
+  vars:
+    ansible_become_pass: "{{ lookup('vars', 'webservers_' + inventory_hostname + '_pass') }}"  # imported from vault
+    webserver_public_ip: "{{ lookup('vars', 'webservers_' + inventory_hostname + '_public_ip') }}"
+    webserver_port: "{{ lookup('vars', 'webservers_' + inventory_hostname + '_angular_port') }}"
+    spring_port: "{{ lookup('vars', 'webservers_' + inventory_hostname + '_spring_port') }}"
+    python_port: "{{ lookup('vars', 'webservers_' + inventory_hostname + '_python_port') }}"
+  become: true
+  tasks:
+    - name: Copy the Spring Boot artifact to the server
+      ansible.builtin.copy:
+        src: ./StraySafe.jar
+        dest: /opt/StraySafe.jar
+        mode: '0644'
+    - name: Move the Python backend artifact to the server
+      ansible.builtin.copy:
+        src: ./python-dist/
+        dest: /opt/python-dist
+        mode: '0644'
+        force: true
+    - name: Find .whl file in /opt/python-dist
+      ansible.builtin.find:
+        paths: /opt/python-dist
+        patterns: '*.whl'
+      register: found_whl_files
+    - name: Install Python backend with pipx
+      shell:
+        cmd: pipx install {{ found_whl_files.files[0].path }} --force
+      when: found_whl_files.matched > 0
+    - name: Copy the frontend artifact to the server
+      ansible.builtin.copy:
+        src: ./dist
+        dest: /var/www/html
+        mode: '0644'
+        force: true
+    - name: Change ownership of the Angular frontend directory
+      ansible.builtin.file:
+        path: /tmp/dist/frontend
+        owner: www-data
+        group: www-data
+        recurse: true
+    - name: Reload systemd to recognize Spring Boot service
+      ansible.builtin.systemd:
+        daemon_reload: true
+    - name: Enable and start Spring Boot service
+      ansible.builtin.systemd:
+        name: spring-boot-app
+        enabled: true
+        state: restarted
+    - name: Enable and start Python service
+      ansible.builtin.systemd:
+        name: python-app
+        enabled: true
+        state: restarted
+    - debug:
+        msg:
+          - Deployment complete.
+          - Frontend is available at http://{{ webserver_public_ip }}:{{ webserver_port
+            }}
+          - Spring backend is available at http://{{ webserver_public_ip }}:{{ spring_port
+            }}
+          - Python backend is available at http://{{ webserver_public_ip }}:{{ python_port
+            }}

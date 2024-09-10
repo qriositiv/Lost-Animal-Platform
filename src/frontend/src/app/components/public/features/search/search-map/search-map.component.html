@@ -1,0 +1,188 @@
+<div class="flex justify-center w-full border border-zinc-500">
+  <div class="w-16 h-full space-y-4 mt-4">
+    <div class="flex justify-center pb-2 border-b border-zinc-200">
+      <button (click)="expandFilter()">
+        @if (expanded) {
+          <fa-icon [icon]="faLeft" class="text-4xl text-zinc-500"></fa-icon>
+        } @else {
+          <fa-icon [icon]="faRight" class="text-4xl text-zinc-500"></fa-icon>
+        }
+      </button>
+    </div>
+    <div class="flex justify-center">
+      <button (click)="switchDogs()">
+        <fa-icon
+          [icon]="faDog"
+          class="text-4xl"
+          [class.text-zinc-300]="showDogs === false"
+          [class.text-emerald-300]="showDogs === true"
+        ></fa-icon>
+      </button>
+    </div>
+    <div class="flex justify-center">
+      <button (click)="switchCats()">
+        <fa-icon
+          [icon]="faCat"
+          class="text-4xl"
+          [class.text-zinc-300]="showCats === false"
+          [class.text-emerald-300]="showCats === true"
+        ></fa-icon>
+      </button>
+    </div>
+    <div class="flex justify-center pb-2 border-b border-zinc-200">
+      <button (click)="switchOther()">
+        <fa-icon
+          [icon]="faFeather"
+          class="text-4xl"
+          [class.text-zinc-300]="showOther === false"
+          [class.text-emerald-300]="showOther === true"
+        ></fa-icon>
+      </button>
+    </div>
+    <div class="flex justify-center">
+      <button (click)="switchLost()">
+        <fa-icon
+          [icon]="faCheck"
+          class="text-4xl"
+          [class.text-rose-200]="showLost === false"
+          [class.text-rose-500]="showLost === true"
+        ></fa-icon>
+      </button>
+    </div>
+    <div class="flex justify-center">
+      <button (click)="switchSeen()">
+        <fa-icon
+          [icon]="faCheck"
+          class="text-4xl"
+          [class.text-lime-200]="showSeen === false"
+          [class.text-lime-500]="showSeen === true"
+        ></fa-icon>
+      </button>
+    </div>
+    <div class="flex justify-center pb-2 border-b border-zinc-200">
+      <button (click)="switchFound()">
+        <fa-icon
+          [icon]="faCheck"
+          class="text-4xl"
+          [class.text-indigo-200]="showFound === false"
+          [class.text-indigo-500]="showFound === true"
+        ></fa-icon>
+      </button>
+    </div>
+    <div class="flex justify-center pb-2 border-b border-zinc-200">
+      <button (click)="switchShelters()">
+        <fa-icon
+          [icon]="faShelter"
+          class="text-4xl"
+          [class.text-orange-200]="showShelters === false"
+          [class.text-orange-500]="showShelters === true"
+        ></fa-icon>
+      </button>
+    </div>
+  </div>
+  @if (expanded) {
+    <div class="w-auto pr-6 mt-5 text-2xl space-y-6">
+      <div class="flex justify-left mt-1">
+        <p class="text-zinc-500 pb-2 border-b border-zinc-200" i18n="@@close">Close</p>
+      </div>
+      <div class="flex justify-left mt-1">
+        <p
+          class="hover:text-emerald-500"
+          [class.text-zinc-500]="showDogs === false"
+          [class.text-emerald-300]="showDogs === true"
+          i18n="@@dogs"
+        >
+          Dogs
+        </p>
+      </div>
+      <div class="flex justify-left mt-1">
+        <p
+          class="hover:text-emerald-500"
+          [class.text-zinc-500]="showCats === false"
+          [class.text-emerald-300]="showCats === true"
+          i18n="@@cats"
+        >
+          Cats
+        </p>
+      </div>
+      <div class="flex justify-left mt-1">
+        <p
+          class="hover:text-emerald-500 pb-2 border-b border-zinc-200"
+          [class.text-zinc-500]="showOther === false"
+          [class.text-emerald-300]="showOther === true"
+          i18n="@@other"
+        >
+          Other
+        </p>
+      </div>
+      <div class="flex justify-left mt-1">
+        <p
+          class="hover:text-rose-400"
+          [class.text-zinc-500]="showLost === false"
+          [class.text-rose-500]="showLost === true"
+          i18n="@@lost"
+        >
+          Lost
+        </p>
+      </div>
+      <div class="flex justify-left mt-1">
+        <p
+          class="hover:text-lime-400"
+          [class.text-zinc-500]="showSeen === false"
+          [class.text-lime-500]="showSeen === true"
+          i18n="@@seen"
+        >
+          Seen
+        </p>
+      </div>
+      <div class="flex justify-left mt-1">
+        <p
+          class="hover:text-indigo-400 pb-2 border-b border-zinc-200"
+          [class.text-zinc-500]="showFound === false"
+          [class.text-indigo-500]="showFound === true"
+          i18n="@@found"
+        >
+          Found
+        </p>
+      </div>
+      <div class="flex justify-left mt-1">
+        <p
+          class="hover:text-orange-400 pb-2 border-b border-zinc-200"
+          [class.text-zinc-500]="showShelters === false"
+          [class.text-orange-500]="showShelters === true"
+          i18n="@@shelters"
+        >
+          Shelters
+        </p>
+      </div>
+    </div>
+  }
+  <div class="w-full h-auto border-l border-zinc-500">
+    <div class="relative">
+      <div class="absolute top-4 left-12 md:w-1/3 z-10">
+        <div class="border border-gray-300 text-left w-full px-3 py-2 rounded-full bg-white flex space-x-2">
+          <button (click)="getLocation()">
+            <fa-icon [icon]="faLocation" class="text-xl rounded-full bg-emerald-200 py-1 px-2"></fa-icon>
+          </button>
+          <input
+            [(ngModel)]="address"
+            (keyup.enter)="searchAddress()"
+            type="text"
+            [placeholder]="placeholder"
+            class="rounded-full p-1 w-full placeholder:text-zinc-500"
+          />
+          <button (click)="searchAddress()">
+            <fa-icon [icon]="faMove" class="text-xl rounded-full bg-emerald-200 py-1 px-2"></fa-icon>
+          </button>
+        </div>
+      </div>
+      <div class="w-full h-[90vh]">
+        <div class="w-full h-full z-0" leaflet [leafletOptions]="options" (leafletMapReady)="onMapReady($event)"></div>
+      </div>
+    </div>
+
+    @if (clickedReportId) {
+      <app-report-popup (closeModal)="onCloseModal()" [reportId]="clickedReportId"></app-report-popup>
+    }
+  </div>
+</div>

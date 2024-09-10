@@ -1,0 +1,84 @@
+---
+- hosts: databases
+  vars_files: [vault.yml]
+  vars:
+    ansible_become_pass: "{{ lookup('vars', 'databases_' + inventory_hostname + '_pass') }}"  # imported from vault
+    database_private_ip: "{{ lookup('vars', 'databases_' + inventory_hostname + '_private_ip') }}"
+    database_public_ip: "{{ lookup('vars', 'databases_' + inventory_hostname + '_public_ip') }}"
+    database_port: "{{ lookup('vars', 'databases_' + inventory_hostname + '_port') }}"
+    database_name: straysafe
+    database_user: straysafe
+    database_password: '{{ database_password }}'
+    ansible_ssh_pipelining: true  # Allow creation of temporary files on remote machine, else postgresql_user module will fail
+    sql_files: [tables.sql, breeds.sql]
+  become: true
+  tasks:
+    - name: Installing packages
+      apt:
+        pkg: [postgresql, postgresql-contrib, python3-psycopg2]
+        state: present
+        update-cache: true
+    - name: Starting PostgreSQL service
+      service:
+        name: postgresql
+        state: started
+    - name: Creating "{{ database_user }}" user for PostgreSQL
+      postgresql_user:
+        name: '{{ database_user }}'
+        password: '{{ database_password }}'
+        encrypted: true
+        state: present
+      become_user: postgres
+    - name: Creating StraySafe database
+      postgresql_db:
+        state: present
+        name: '{{ database_name }}'
+        owner: '{{ database_user }}'
+      become_user: postgres
+    - name: Give user superuser privileges
+      postgresql_user:
+        name: '{{ database_user }}'
+        role_attr_flags: SUPERUSER
+      become_user: postgres
+    - name: Collect PostgreSQL version
+      become: true
+      become_user: postgres
+      community.postgresql.postgresql_info:
+        filter: version
+      register: postgres_info
+    - name: Modify listen addresses for postgresql to accept any ip.
+      lineinfile:
+        path: /etc/postgresql/{{ postgres_info.version.major }}/main/postgresql.conf
+        regexp: ^#?listen_addresses
+        line: listen_addresses = '*'
+    - name: Configure PostgreSQL for local connections without authentication
+      ansible.builtin.lineinfile:
+        path: /etc/postgresql/{{ postgres_info.version.major }}/main/pg_hba.conf
+        regexp: ^local\s+all\s+all\s+peer
+        line: local   all             all                                     trust
+    - name: Allow connection to all ip's
+      lineinfile:
+        path: /etc/postgresql/{{ postgres_info.version.major }}/main/pg_hba.conf
+        line: host all all 0.0.0.0/0 md5
+        insertafter: EOF
+    - name: Restarting PostgreSQL
+      service:
+        name: postgresql
+        state: restarted
+    - name: Copy files
+      copy:
+        src: '{{ playbook_dir }}/sql_scripts/'
+        dest: /tmp/sql_scripts
+    - name: Execute all scripts
+      community.postgresql.postgresql_script:
+        db: '{{ database_name }}'
+        login_user: '{{ database_user }}'
+        login_password: '{{ database_password }}'
+        path: /tmp/sql_scripts/{{ item }}
+      loop: '{{ sql_files }}'
+    - debug:
+        msg:
+          - 'connet to database from your computer with:'
+          - psql -h {{ database_public_ip }} -U straysafe -d straysafe -p {{ database_port }}
+          - 'connect to database from ansible vm using:'
+          - psql -h {{ database_private_ip }} -U straysafe -d straysafe

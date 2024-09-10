@@ -1,0 +1,30 @@
+<VirtualHost *:80>
+    ServerAdmin straysafe@kieti.lt
+    DocumentRoot /var/www/html/dist/frontend/browser
+
+    <Directory /var/www/html/dist/frontend/browser>
+        Options -Indexes +FollowSymLinks
+        AllowOverride None
+        Require all granted
+
+        RewriteEngine on
+        RewriteBase /
+
+        # Reloading should redirect to the same page
+        RewriteRule ^../index\.html$ - [L]
+
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule (..) $1/index.html [L]
+
+        # Redirect to the correct language
+        RewriteCond %{HTTP:Accept-Language} ^en [NC]
+        RewriteRule ^$ /en/ [R]
+
+        RewriteCond %{HTTP:Accept-Language} ^lt [NC]
+        RewriteRule ^$ /lt/ [R]
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/frontend_error.log
+    CustomLog ${APACHE_LOG_DIR}/frontend_access.log combined
+</VirtualHost>

@@ -1,0 +1,11 @@
+Topics decided, discussed:
+
+1. Make weekly reports.
+2. Squash commits if the commit is not meaningful in any way.
+3. Time tracking does not need to be super duper honest.
+4. The word "meeting" means to call up or get together for up to 30 min.
+5. "Long meeting" the one we would do after every milestone can vary (I would say like two or more hours)
+6. Use code formatters and linting to make a uniform code base.
+7. Peer reviews in merge requests should preferably be looked at by everyone, but at minimum there should be at least one person who approved.
+8. We will have branches called master and development. After every milestone finish, the development branch is merged into master.
+9. We are using British English during all project spheres (reports, documents, coding, UI).

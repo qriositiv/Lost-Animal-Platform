@@ -1,0 +1,118 @@
+<div class="md:flex md:items-start pt-4 w-3/4 max-lg:w-11/12 mx-auto">
+  <div class="md:w-1/2 px-4 place-content-start">
+    <div class="border-b py-4">
+      <app-image-upload-ngx (imageCroppedEvent)="onImageUpload($event)"></app-image-upload-ngx>
+    </div>
+  </div>
+
+  <div class="w-full md:w-1/2 p-8 rounded-lg border mb-4 flex flex-col">
+    <button class="bg-emerald-400 hover:bg-emerald-500 text-white p-2 w-32 rounded-full self-end" i18n="goback">
+      Go back
+    </button>
+    <h1 class="text-2xl text-center font-bold mb-1">
+      <ng-container i18n="petinformation">Pet Information</ng-container>
+    </h1>
+    <p class="text-center text-zinc-400" i18n="@@giveasmuchinformationofthepetaspossible">
+      Give as much information of the pet as possible.
+    </p>
+    <p class="text-center text-red-500 border-b" i18n="@@indicatesrequiredoprion">* Indicates required option</p>
+
+    <form [formGroup]="petForm" (ngSubmit)="onSubmit()">
+      @if (type === Type.Lost) {
+      <div>
+        <label for="pet_name" class="block text-gray-700 text-base ml-2 font-semibold required" i18n="@@petname">Pet
+          name</label>
+        <input id="pet_name" type="pet_name" placeholder="Pet name" formControlName="pet_name"
+          class="w-full px-4 py-2 border rounded-md" />
+      </div>
+      }
+      <!-- } @else { -->
+      <!-- <div class="flex my-4 ml-2"> -->
+      <!--   <input -->
+      <!--     id="pet_found" -->
+      <!--     type="checkbox" -->
+      <!--     formControlName="pet_found" -->
+      <!--     class="w-4 h-4 mt-1 accent-emerald-400 rounded" -->
+      <!--   /> -->
+      <!--   <label for="pet_found" class="block text-gray-700 text-base ml-2" i18n="@@ihavetakeninthepet" -->
+      <!--     >I have taken in the pet</label -->
+      <!--   > -->
+      <!-- </div> -->
+      <!-- } -->
+
+      <div class="grid grid-cols-2 gap-5">
+        <div>
+          <label for="pet_type" class="block text-gray-700 text-base ml-2 font-semibold required"
+            i18n="@@type">Type</label>
+          <select id="pet_type" type="pet_type" formControlName="pet_type" class="w-full px-4 py-2 border rounded-md">
+            <option [value]="Animal.Dog" i18n="@@dog">Dog</option>
+            <option [value]="Animal.Cat" i18n="@@cat">Cat</option>
+            <option [value]="Animal.Other" i18n="@@other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="pet_size" class="block text-gray-700 text-base ml-2 font-semibold required"
+            i18n="@@size">Size</label>
+          <select id="pet_size" name="pet_size" formControlName="pet_size" class="w-full px-4 py-2 border rounded-md">
+            <option [value]="Size.Unknown">Unknown</option>
+            <option [value]="Size.Small" i18n="@@small">Small</option>
+            <option [value]="Size.Medium" i18n="@@medium">Medium</option>
+            <option [value]="Size.Large" i18n="@@big">Big</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="pet_gender" class="block text-gray-700 text-base ml-2 font-semibold required"
+            i18n="@@gender">Gender</label>
+          <select id="pet_gender" name="pet_gender" formControlName="pet_gender"
+            class="w-full px-4 py-2 border rounded-md">
+            <option [value]="Gender.Unknown">Unknown</option>
+            <option [value]="Gender.Male" i18n="@@male">Male</option>
+            <option [value]="Gender.Female" i18n="@@female">Female</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="pet_age" class="block text-gray-700 text-base ml-2 font-semibold required"
+            i18n="@@age">Age</label>
+          <select id="pet_age" name="pet_age" formControlName="pet_age" class="w-full px-4 py-2 border rounded-md">
+            <option [value]="Age.Unknown">Unknown</option>
+            <option [value]="Age.Young" i18n="@@young">Young</option>
+            <option [value]="Age.Adult" i18n="@@adult">Adult</option>
+            <option [value]="Age.Senior" i18n="@@senior">Senior</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="relative w-full mb-4">
+        <label for="pet_breed" class="block text-gray-700 text-base ml-2 font-semibold required"><ng-container
+            i18n="breed">Breed</ng-container>
+        </label>
+        <input type="pet_breed" id="pet_breed" formControlName="pet_breed" autocomplete="off" (focus)="onFocus()"
+          (blur)="onBlur()" placeholder="Breed name"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" />
+        <div *ngIf="filteredBreeds.length > 0 && isInputFocused"
+          class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
+          <ul class="max-h-40 overflow-auto">
+            <li *ngFor="let breed of filteredBreeds; let i = index" (click)="selectBreed(breed)"
+              class="p-2 hover:bg-gray-200 cursor-pointer" [class.bg-gray-200]="i === highlightedIndex" #breedItem>
+              {{ breed }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex justify-center">
+        <button type="submit"
+          class="text-nowrap text-white bg-emerald-400 hover:bg-emerald-500 focus:outline-none font-bold rounded-full md:px-9 md:py-3 px-7 py-3 text-center me-2 mb-2"
+          [ngClass]="{
+            'button-enabled': petForm.valid,
+            'button-disabled': !petForm.valid
+          }" [disabled]="!petForm.valid">
+          Register Pet
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

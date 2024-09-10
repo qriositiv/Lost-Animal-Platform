@@ -1,0 +1,76 @@
+<div class="space-y-2">
+  <div class="space-y-4 pb-3 border-b border-zinc-200" [formGroup]="securityAndOtherForm">
+    <div>
+      <p class="ml-2 mb-4 font-bold text-xl border-b border-zinc-200">Security</p>
+    </div>
+    <div class="space-y-4">
+      <div class="mb-2 relative">
+        <label for="password" class="block ml-2 text-base text-gray-700" i18n="@@password">New password</label>
+        <input
+          id="password"
+          formControlName="password"
+          [type]="passwordHidden ? 'password' : 'text'"
+          class="mt-1 block w-full pl-3 pr-15 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+        <button
+          type="button"
+          (click)="togglePasswordVisibility()"
+          class="absolute inset-y-3.5 right-0 pr-3 flex items-center justify-between min-h-full text-sm leading-4"
+          style="width: 2.5rem"
+        >
+          <i class="fas" [class]="passwordHidden ? 'fa-eye-slash' : 'fa-eye'"></i>
+        </button>
+      </div>
+      <div *ngIf="password?.invalid && password?.touched">
+        <div *ngIf="password?.errors?.['required']" class="text-red-500 text-sm mt-1 mb-4" i18n="@@passwordisrequired">
+          Password is required
+        </div>
+        <div *ngIf="password?.errors?.['pattern']">
+          <div class="text-red-500 text-sm mt-1 content-center" i18n="">Password must contain:</div>
+          <div class="text-red-500 text-sm mt-1" i18n="">At least one uppercase letter</div>
+          <div class="text-red-500 text-sm mt-1" i18n="">At least one lowercase letter</div>
+          <div class="text-red-500 text-sm mt-1" i18n="">At least one digit</div>
+          <div class="text-red-500 text-sm mt-1" i18n="">At least one special character</div>
+          <div class="text-red-500 text-sm mt-1" i18n="">Cannot contain empty spaces</div>
+          <div class="text-red-500 text-sm mt-1 mb-4" i18n="">Must be longer than 8 characters</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="ml-2 mb-4 font-bold text-xl border-b border-zinc-200">Notifications</p>
+    </div>
+    <div class="ml-2">
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" class="sr-only peer" />
+        <div
+          class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-400"
+        ></div>
+        <span class="ms-3 text-base font-medium text-gray-700">Allow notifications</span>
+      </label>
+    </div>
+    <div>
+      <p class="ml-2 mb-4 font-bold text-xl border-b border-zinc-200">Role</p>
+    </div>
+    <div class="space-y-2">
+      <div class="flex">
+        <p class="text-gray-700 text-base ml-2">
+          Your role: <span class="bg-indigo-300 rounded-full px-3 py-1">{{ currentRole }}</span>
+        </p>
+      </div>
+      @if(currentRole === "USER") {
+      <div>
+        <p class="text-gray-700 text-base ml-2">Are you a shelter? Contact us at help.straysafe/gmail.com.</p>
+      </div>
+      }
+    </div>
+    <div class="mt-8 flex justify-center">
+      <button
+        type="button"
+        (click)="onUpdateSecurity()"
+        class="text-nowrap text-white bg-emerald-400 hover:bg-emerald-500 focus:outline-none font-bold rounded-full md:px-9 md:py-3 px-7 py-3 text-center me-2 mb-2"
+      >
+        Save
+      </button>
+    </div>
+  </div>
+</div>

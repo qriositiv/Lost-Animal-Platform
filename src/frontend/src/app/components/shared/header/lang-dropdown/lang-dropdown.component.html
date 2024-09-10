@@ -1,0 +1,25 @@
+<div class="relative" clickedOutside (clickOutside)="onClickedOutside()">
+  <button
+    class="relative z-10 block rounded-full p-2 bg-emerald-500 hover:bg-emerald-200 text-zinc-100 hover:text-emerald-700 md:px-6 text-sm py-3 overflow-hidden focus:outline-none focus:border-white"
+    (click)="toggleDropdown()"
+  >
+    <span class="fi fi-{{ currentLocale.flag | lowercase }} pt-1"></span>
+    <span class="pl-1 hidden lg:inline text-base">{{ currentLocale.label }}</span>
+    <span class="pl-1 md:hidden">{{ currentLocale.code }}</span>
+  </button>
+  @if (dropdownOpen === true) {
+    <div class="absolute left-1/2 transform -translate-x-1/2 top-full mt-2 w-32 md:w-48 bg-emerald-500 border-2 border-emerald-500 rounded-md shadow-xl z-20">
+      @for (locale of locales; track locale) {
+        @if (locale.code !== currentLocale.code) {
+        <a
+          [href]="generateLink(locale.code)"
+          class="block border-y border-emerald-500 px-4 py-2 text-base capitalize text-white hover:bg-emerald-400">
+          <span class="fi fi-{{ locale.flag | lowercase }}"></span>
+          <span class="pl-1 hidden md:inline">{{ locale.label }}</span>
+          <span class="pl-1 md:hidden uppercase">{{ locale.code }}</span>
+        </a>
+        }
+      }
+    </div>
+  }
+</div>
